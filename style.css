@@ -195,7 +195,7 @@ code{
   fill: var(--accent);
 }
 
-@media(min-width: 360px){
+@media only screen and (min-width: 360px){
   body{
     width: 90%;
     margin: auto;
