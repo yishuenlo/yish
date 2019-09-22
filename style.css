@@ -86,6 +86,27 @@ a:hover{
   margin-bottom: 6em;
 }
 
+.about-container{
+  margin-bottom: 4em;
+}
+
+.heading-title{
+  clear: both;
+  width: 100%;
+}
+
+.heading-descriptions{
+  font-size: 4em;
+  line-height: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.about-text{
+  padding-top: 3em;
+  border-top: 1px solid var(--accent);
+}
+
 main{
   clear: both; /* clear float form nav */
   margin-bottom: 10em;
@@ -165,6 +186,7 @@ code{
 }
 
 .social-icons-container {
+  padding-left: none;
   display: flex;
 }
 
