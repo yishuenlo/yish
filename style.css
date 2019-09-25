@@ -2,6 +2,7 @@
   --primary: #424242; /* dark grey */
   --light: #9E9E9E; /* light grey */
   --accent: #BA68C8; /* purple */
+  --accent2: #CE93D8; /* light purple */
   --width: 600px;
 }
 
@@ -149,6 +150,22 @@ section ul li{
 p{
   line-height: 1.5em;
   margin-bottom: 1em;
+}
+
+a.button{
+  clear: both;
+  display: inline-block;
+  margin-top: 1em;
+  color: white;
+  background-color: var(--accent2);
+  border: 1px solid var(--accent2);
+  border-radius: 6px;
+  padding: 4px 15px;
+}
+
+a.button:hover{
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .divider {
