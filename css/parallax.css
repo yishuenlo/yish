@@ -1,0 +1,90 @@
+body, html{
+  height: 100%;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  width: 100%;
+}
+
+/* reset */
+html, body, section, div, h1, h2, h3, p{
+  margin: 0;
+  padding: 0;
+}
+
+.parallax{
+  position: relative;
+  opacity: 0.75;
+
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1{
+  background-image: url('../img/kari-shea.jpg');
+  /* image used */
+  min-height: 100%;;
+}
+
+.bgimg-2{
+  background-image: url('../img/ramiz-dedakovic.jpg');
+  /* image used */
+  min-height: 50%;;
+}
+
+.bgimg-3{
+  background-image: url('../img/sarah-dorweiler.jpg');
+  /* image used */
+  min-height: 50%;;
+}
+
+.caption{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.caption h1{
+  width: 50%;
+  margin: auto;
+  background-color: #111;
+  color: white;
+  padding: 18px;
+  font-size: 2em;
+  letter-spacing: 10px;
+}
+
+.caption h2{
+  width: 300px;
+  margin: auto;
+  color: white;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.intro{
+  height: 300px;
+  margin: auto;
+}
+
+.description{
+  width: 70%;
+  padding-top: 5em;
+  margin: auto;
+}
+
+.text{
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  background-color: #282E34;
+}
+
+.text .description{
+  padding-top: 6em;
+  color: white;
+}
