@@ -45,9 +45,10 @@
         </h2>
         <p>Fixed parallax layers so they're displaying properly without extra overlaps. Fixes include: </p>
         <ul>
-          <li>Assign differnt window heights to keyart container and individual key art layers. Container has less height to crop out the bigger layers.</li>
+          <li>Assign different window heights to keyart container and individual key art layers. Container has less height to crop out the bigger layers.</li>
           <li>Assigning z-index to sections, so main content is above parallax and cover up the overlaps. </li>
         </ul>
+        <p>Issues: fixed table of content is now beneath everything, since it doesn' have z-index assigned. In other words, TOC needs to be below hero section, but on top  of main contents. But main content needs to be above of hero section. Will need to find alternative to fix z-index issue. Possible solution could be adding another section that's above hero, but below main. </p>
       </section>
       <section class="post">
         <h4>phase 1</h4>
