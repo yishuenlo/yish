@@ -12,7 +12,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Code|Fira+Sans:300,400|Reenie+Beanie&display=swap');
 
-body, header, h1, h2, h3, h4, p, div, section, ul, li {
+body, header, h1, h2, h3, h4, p, div, section, ul, li, ol {
   margin: 0;
   padding: 0;
 }
@@ -139,11 +139,11 @@ h4{
   margin-bottom: 0.75em;
 }
 
-section ul{
+section ul, section ol{
   padding-left: 1em;
 }
 
-section ul li{
+section ul li, section ol li{
   margin-bottom: 0.5em;
 }
 

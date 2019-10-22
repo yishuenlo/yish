@@ -12,7 +12,7 @@
           <a href="index.html"><img src="img/yish-logo.png" alt="yish logo" class="site-logo"></a>
           <ul class="nav-ul">
             <li><a href="index.html">code</a></li>
-            <li><a href="paint.html">paint</a></li>
+            <!-- <li><a href="paint.html">paint</a></li> -->
             <li><a href="process.html">process</a></li>
             <li><a href="about.html">about</a></li>
           </ul>
@@ -37,6 +37,22 @@
     </header>
 
     <main>
+      <section class="post">
+        <h4>phase 1</h4>
+        <h2>$21
+          <span class="divider">//</span>
+          <span class="date">October 20, 2019</span>
+        </h2>
+        <p>Based on viewing from the inspector for <a href="https://gardenestudio.com.br/index.php" target="_blank">gardenestudio</a>, I can see:</p>
+        <ol>
+          <li><code>data-v</code> changes from 0 to 1 as I scroll from top to dowon. It seems <code>data-v</code> controlls the length of these vector lines.</li>
+          <li>In each individual <code>path</code> tag, there is a <code>style: "stroke-dasharray"</code> assigned to it. And <code>stroke-dasharray</code> has to number that changes values as I scroll.</li>
+          <li>The main <code>svg</code> tag has classes changing from <code>skrollable-before</code> to <code>skrollable-between</code>, as I scroll through the page.</li>
+        </ol>
+        <p>Challenges: I can't find the CSS for these classes... will need to dig around to find them.</p>
+
+      </section>
+
       <section class="post">
         <h4>phase 1</h4>
         <h2>$21
