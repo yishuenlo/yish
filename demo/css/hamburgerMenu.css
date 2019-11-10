@@ -1,0 +1,106 @@
+body{
+  font-family: 'fira sans', arial;
+  font-weight: 100;
+  background-color: #37474F;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin: 10em auto 10em auto;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+/* START sidebar menu */
+.nav{
+  transition: left 500ms ease;
+  background-color: #263238;
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+  height: 100vh;
+  left: -30rem; /* hide menu to the left */
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 15rem;
+  z-index: 1;
+}
+
+.nav a{
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.6;
+}
+
+.nav a:hover{
+  opacity: 1;
+}
+
+.nav.expanded {
+  left: 0;
+}
+
+.nav ul{
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* style and animate the hamburger menu trigger when the menu is opened and closed */
+.nav-toggle{
+  user-select: none; /* what is user-select? */
+  cursor: pointer;
+  height: 2rem;
+  left: 1rem;
+  position: fixed;
+  top: 2rem;
+  width: 2rem;
+  z-index: 2;
+}
+
+.nav-toggle:hover{
+  opacity: 0.8;
+}
+
+/* hamburger icon - 3 horizon lines */
+.nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 500ms ease;
+  background: white;
+  content: '';
+  height: 0.1rem;
+  width: 100%;
+}
+
+/* offset 3 lines to create icon */
+.nav-toggle .nav-toggle-bar { margin-top: 0; }
+.nav-toggle .nav-toggle-bar::after { margin-top: 0.6rem; }
+.nav-toggle .nav-toggle-bar::before { margin-top: -0.6rem; }
+
+
+
+
+/* hamburger icon animation */
+.nav-toggle.expanded .nav-toggle-bar{
+  background: transparent;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+	  background: white;
+	  margin-top: 0; /* make slanted line center */
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after{
+  transform: rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before{
+  transform: rotate(-45deg);
+}
