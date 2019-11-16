@@ -39,6 +39,22 @@
     <main>
       <article class="post">
         <h4>phase 1</h4>
+        <h2>$37
+          <span class="divider">//</span>
+          <span class="date">November 16, 2019</span>
+        </h2>
+        <p>Added javascript and toggle interaction works. However, due to different z-index for header navbar and hamburger menu, they create another issue. The expanded hamburger menu should cover up everything, including the header, but hamburger icon is inside the header. Therefoe, it's either the whole menu covers everything up, including the hamburger icon. Or hamburger icon is showing, but header is also on top of expanded menu.</p>
+        <p>Potential solution:</p>
+        <ol>
+          <li>Move hamburger icon out of <code>header</code>, and into <code>nav</code>.</li>
+          <li>Hide rest of the items in header, except hamburger icon</li>
+        </ol>
+        <p>Decided to go with option 2 and hide header when clicking on hamburger icon. So the changes are just within CSS and Javascript, and no need to shuffle the structure in HTML.</p>
+        <p>Next step: add navigation at the footer.</p>
+      </article>
+
+      <article class="post">
+        <h4>phase 1</h4>
         <h2>$36
           <span class="divider">//</span>
           <span class="date">November 14, 2019</span>
