@@ -39,6 +39,25 @@
     <main>
       <article class="post">
         <h4>phase 1</h4>
+        <h2>$53
+          <span class="divider">//</span>
+          <span class="date">December 7, 2019</span>
+        </h2>
+        <p>React can work without JSX. Each JSX is secretly a call to <code>React.createElement(component, props, ...children)</code>, and that's how compilers translate JSX to Javascript.</p>
+        <p>It is possible to create shorthand for React.createElement if we get tired of typing it all the time:</p>
+        <code>
+          const e = React.createElement; <br/>
+          ReactDOM.render( <br/>
+          e('div, null, 'Hello World'), document.getElementById('root')
+          <br/>
+          );
+        </code>
+
+        <p>The same can be done with <code>document.getElementById</code>...</p>
+
+      </article>
+      <article class="post">
+        <h4>phase 1</h4>
         <h2>$52
           <span class="divider">//</span>
           <span class="date">December 6, 2019</span>
