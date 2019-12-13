@@ -39,6 +39,29 @@
     <main>
       <article class="post">
         <h4>phase 1</h4>
+        <h2>$58
+          <span class="divider">//</span>
+          <span class="date">December 13, 2019</span>
+        </h2>
+        <p>Learn more about <code>this</code> in <a href="https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/" target="_blank">Javascript</a>.</p>
+        <p><code>Getter</code> in Javascript. Why use <code>getter</code>? <code>Getters</code> give you a way to define a property of an object, but they do not calculate the property's value until it is
+        accessed. A <code>getter</code> defers the cost of calculating the value until the value is needed, and if it is never needed, you
+        never pay the cost.</p>
+        <p>The value is calculated the first time the <code>getter</code> is called and is then cached so subsequent accesses return the cached
+        value without recalculating it. This is useful in the following situations:
+        <ul>
+          <li>If the calculation of a property value is expensive (takes much RAM or CPU time, spawns worker thread, retrieves remote file, etc).</li>
+          <li>If the value isn't needed just now. It will be used later, or in some case it's not used at all.</li>
+          <li>If it's used, it will be accessed several times, and there is no need to re-calculate that value will never be changed
+          or shouldn't be re-calculated.This means that you shouldn't use a lazy getter for a property whose value you expect to change, because the getter will
+          not recalculate the value.</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get" target="_blank">-Mozilla MDN</a></p>
+        
+      </article>
+      <article class="post">
+      <article class="post">
+        <h4>phase 1</h4>
         <h2>$57
           <span class="divider">//</span>
           <span class="date">December 12, 2019</span>
