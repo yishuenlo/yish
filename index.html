@@ -39,6 +39,45 @@
     <main>
       <article class="post">
         <h4>level 2</h4>
+        <h2>$61.75
+          <span class="divider">//</span>
+          <span class="date">December 20, 2019</span>
+        </h2>
+        <p>What is <code>promise()</code> in Javascript? A <code>promise</code> allows JavaScript to run asynchronously. Javascript typically runs in a singular thread and execute code in order. <code>Promise</code> allows JavaScript to check for conditions and decide which function to execute - whether is the <code>promise</code> is <code>resolved</code> or <code>rejected</code>.</p>
+        <h3>Example codes:</h3>
+        <p>img1.callThisIfLoadedOrWhenLoaded(function() { <br>
+        // loaded<br>
+        }).orIfFailedCallThis(function() {<br>
+        // failed<br>
+        });<br>
+        <br>
+        // and…<br>
+        whenAllTheseHaveLoaded([img1, img2]).callThis(function() {<br>
+        // all loaded<br>
+        }).orIfSomeFailedCallThis(function() {<br>
+        // one or more failed
+        });</p>
+
+        <p><strong>How <code>promise</code> could be use:</strong></p>
+        <p>
+          img1.ready().then(function() {<br>
+          // loaded<br>
+          }, function() {<br>
+          // failed<br>
+          });<br>
+          <br>
+          // and…<br>
+          Promise.all([img1.ready(), img2.ready()]).then(function() {<br>
+          // all loaded<br>
+          }, function() {<br>
+          // one or more failed<br>
+          });
+
+        </p>
+      </article>
+      <article class="post">
+      <article class="post">
+        <h4>level 2</h4>
         <h2>$61.50
           <span class="divider">//</span>
           <span class="date">December 18, 2019</span>
