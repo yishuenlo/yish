@@ -147,6 +147,12 @@ article ul li, article ol li{
   margin-bottom: 0.5em;
 }
 
+section{
+  margin: 3em 0;
+  padding-bottom: 2em;
+  border-bottom: 2px solid var(--accent);
+}
+
 p{
   line-height: 1.5em;
   margin-bottom: 1em;
@@ -258,7 +264,24 @@ code{
     margin-bottom: 0;
 }
 
+table{
+  width: 80%;
+  text-align: left;
+}
 
+th, td{
+  width: 33%;
+}
+
+.image{
+  display: block;
+  width: 100%;
+  height: 50vh;
+  /* background-color: blue; */
+  background-image: url('../img/MSI GS.png');
+  background-position: center;
+  background-size: cover;
+}
 
 @media only screen and (min-width: 360px){
   body{
