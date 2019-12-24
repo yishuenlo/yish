@@ -39,6 +39,35 @@
     <main>
       <article class="post">
         <h4>level 2</h4>
+        <h2>$67.50
+          <span class="divider">//</span>
+          <span class="date">December 23, 2019</span>
+        </h2>
+        <p><a href="https://reactjs.org/docs/thinking-in-react.html" target="_blank">Thinking in React </a>- helping me understand why use React and how React is used in real life application.</p>
+        <ol>
+          <li>Break down UI design into components. Each component should only do ONE thing - <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank">single responsibility principle</a></li>
+          <li>Build static version in React. In this step, use <code>props</code> and not <code>state</code>. "... <code>props</code> are a way of passing data from parent to child. ... <code>State</code> is reserved only for interactivity, that is, data
+          that changes over time." - React Guide</li>
+          <li>Add "DRY" Minimal state. To determine whether it is a state, ask:
+            <ul>
+              <li>Is it passed in from a parent via props? If so, it probably isn’t state.</li>
+              <li>Does it remain unchanged over time? If so, it probably isn’t state.</li>
+              <li>Can you compute it based on any other state or props in your component? If so, it isn’t state. - remember DRY</li>
+            </ul>
+          </li>
+          <li>Identity where the state should live. 
+            <ul>
+              <li>Identify every component that renders something based on that state.</li>
+              <li>Find a common owner component (a single component above all the components that need the state in the hierarchy).</li>
+              <li>Either the common owner or another component higher up in the hierarchy should own the state.</li>
+              <li>If you can’t find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.</li>
+            </ul>
+          </li>
+        </ol>
+        <p>I need to read this <a href="https://reactjs.org/docs/components-and-props.html" target="_blank">documentation</a> more and have a better grasp of React state, props, and components to continue Codecademy's lesson.</p>
+      </article>
+      <article class="post">
+        <h4>level 2</h4>
         <h2>$67.25
           <span class="divider">//</span>
           <span class="date">December 22, 2019</span>
