@@ -6,16 +6,32 @@ const PRINT_EXP_TNL = document.querySelectorAll('.exp-tnl');
 //DOM - log components
 const LEVEL_DISPLAY = document.querySelectorAll('.level-display');
 const CURRENT_EXP = document.querySelectorAll('.current-exp');
+const TODAY_DATE = document.querySelectorAll('.date'); //most recent date tag
 
 //display today's date
 //problem: how do you 'record' previous dates?
-let today = new Date();
-let monthNames = [
-    'January', 'February', 'March',
-    'April', 'May', 'June', 'July',
-    'August', 'September', 'October', 'November', 'December'
-];
-let date = `${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
+let showUp = true;
+let printDate;
+function printToday(){
+    let today = new Date();
+    let monthNames = [
+        'January', 'February', 'March',
+        'April', 'May', 'June', 'July',
+        'August', 'September', 'October', 'November', 'December'
+    ];
+    let date = `${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
+    return printDate = date.toString();
+}
+
+function recordDate(){
+    if(showUp){
+        printToday();
+    }
+    return TODAY_DATE[0].innerHTML = printDate;
+}
+
+window.onload = recordDate;
+
 
 // experience points 
 const TRAIN_CONSUME_EXP = 0.25;
