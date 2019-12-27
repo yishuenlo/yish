@@ -6,7 +6,14 @@ const PRINT_EXP_TNL = document.querySelectorAll('.exp-tnl');
 //DOM - log components
 const LEVEL_DISPLAY = document.querySelectorAll('.level-display');
 const CURRENT_EXP = document.querySelectorAll('.current-exp');
-const TODAY_DATE = document.querySelectorAll('.date'); //most recent date tag
+const TODAY_DATE = document.querySelectorAll('.date'); 
+const NAV_BAR = document.querySelector('.nav-ul');
+
+NAV_BAR.innerHTML = `
+    <li><a href="index.html">code</a></li>
+    <li><a href="process.html">process</a></li>
+    <li><a href="about.html">about</a></li>
+`;
 
 //display today's date
 //problem: how do you 'record' previous dates?
@@ -49,7 +56,7 @@ function currentLevel(exp){
     if (exp <= level(1)) {
         console.log('level 1');
     } else if (exp <= level(2)) {
-        console.log('level 2');
+        LEVEL_DISPLAY.innerHTML = 'level 2';
     } else if(exp <= level(3)) {
         console.log('level 3');
     } else if(exp <= level(4)){
@@ -72,13 +79,7 @@ function currentLevel(exp){
 //populate level & experience table
 for (i = 0; i < PRINT_LEVEL.length; i++) {
     PRINT_LEVEL[i].innerHTML = `level ${i + 1}`;
-}
-
-for (i = 0; i < PRINT_EXP.length; i++) {
     PRINT_EXP[i].innerHTML = `$${level(i + 1)} EXP`;
-}
-
-for (i = 0; i < PRINT_EXP_TNL.length; i++) {
     PRINT_EXP_TNL[i].innerHTML = `$${level(i + 2) - level(i + 1)} EXP`;
 }
 
