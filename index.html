@@ -40,17 +40,41 @@
       <article class="post">
         <h4 class="level-display">level 2</h4>
         <h2>
+          <span class="current-exp">$69.75</span>
+          <span class="divider">//</span>
+          <span class="date">December 28, 2019</span>
+        </h2>
+        <p>Creating ($0.50 EXP): Using JavaScript to auto populate hlc navigation links. Using construction document concept:
+          say it once and say it in the right place, and 'DRY' - do not repeat yourself concept, it makes sense to use
+          JavaScript to create the fixed navigation for hlc. Since I will only need to write the code once, in JavaScript, and
+          the navigation menu will appear on all pages. </p>
+        <p>Attemps to automate navigation menu</p>
+        <ul>
+          <li>Tried to create 'string' in JavaScript and inject into HTML. Runs into challenges because I will need to add and
+            remove <code>classes</code> to show current page.</li>
+          <li>Read <code>innerText</code> and auto populate anchor tags. Will need to write anchor tags for the entire list.
+            Need to only write the HTML once in JavaScript instead of copy and pasting into multiplage HTML pages.</li>
+        </ul>
+        <p>Next step: figure out how to create the navigation in JavaScript that will auto populate anchor tag attributes, look for which page is current and set class to current, and only need to write the HTML once in JavaScript.</p>
+      </article>
+      <article class="post">
+        <h4 class="level-display">level 2</h4>
+        <h2>
           <span class="current-exp">$69.25</span>
           <span class="divider">//</span>
-          <span class="date"></span>
+          <span class="date">December 27, 2019</span>
         </h2>
         <p>Consuming ($0.25 EXP): learning Sass.</p>
         <ul>
-          <li>Data with Sass variables - <code>$variableName</code>. This is already available with current CSS, with <code>--root</code>.</li>
+          <li>Data with Sass variables - <code>$variableName</code>. This is already available with current CSS, with
+            <code>--root</code>.</li>
           <li>nesting CSS with Sass</li>
-          <li><code>@mixin box-shadow($x, $y, $blur, $c)</code> for browser prefixes. Super useful for making sure CSS works in different browsers.</li>
-          <li><code>@if</code> and <code>@else</code> if just like JavaScript. Use with <code>@mixin</code> to have a block of code.</li>
-          <li><code>@for $i from 1 through 12 { .col-#{$i} { width: 100%/12 * $i; }}</code> Useful for creating columns for layout.</li>
+          <li><code>@mixin box-shadow($x, $y, $blur, $c)</code> for browser prefixes. Super useful for making sure CSS works
+            in different browsers.</li>
+          <li><code>@if</code> and <code>@else</code> if just like JavaScript. Use with <code>@mixin</code> to have a block of
+            code.</li>
+          <li><code>@for $i from 1 through 12 { .col-#{$i} { width: 100%/12 * $i; }}</code> Useful for creating columns for
+            layout.</li>
           <li><code>@each $color in blue, red, green { .#{$color}-text {color: $color;}}</code></li>
         </ul>
       </article>
@@ -59,24 +83,10 @@
         <h2>
           <span class="current-exp">$69.00</span>
           <span class="divider">//</span>
-          <span class="date"></span>
+          <span class="date">December 26, 2019</span>
         </h2>
-        <p>Creating ($0.50 EXP): update this website. Inject navbar from Javascript to HTML, so I only need to create the navbar once, and apply to other pages.</p>
+        <p>Creating ($0.50 EXP): update this website. Inject navbar from JavaScript to HTML, so I only need to create the navbar once, and apply to other pages.</p>
         <p>Problem regarding automating daily log meta data - auto generate levels and date based on the day of recording, and still keep previous records... Think of log as an object with level, date and exp info.</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$68.50</span>
-          <span class="divider">//</span>
-          <span class="date"></span>
-        </h2>
-        <p>Consuming ($0.25 EXP): <a
-            href="https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript"
-            target="_blank">Classes</a> in JavaScript are functions. Classes offer a more concise and clear way of organizing
-          object blueprints.</p>
-        <p>Think of <code>classes</code> as RPG classes, each class has name, level, and <em>class-specific</em> skills.</p>
-        <p>Creating ($0.50 EXP): update this website. Auto populate level table with Javascript based on level euqaution.</p>
       </article>
       <article class="post">
         <h4 class="level-display">level 2</h4>
@@ -85,9 +95,9 @@
           <span class="divider">//</span>
           <span class="date">December 25, 2019</span>
         </h2>
-        <p>Consuming ($0.25 EXP): <a href="https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript" target="_blank">Classes</a> in JavaScript are functions. Classes offer a more concise and clear way of organizing object blueprints.</p>
+        <p>Consuming ($0.25 EXP): <a href="https://www.digitalocean.com/community/tutorials/understanding-classes-in-JavaScript" target="_blank">Classes</a> in JavaScript are functions. Classes offer a more concise and clear way of organizing object blueprints.</p>
         <p>Think of <code>classes</code> as RPG classes, each class has name, level, and <em>class-specific</em> skills.</p>
-        <p>Creating ($0.50 EXP): update this website. Auto populate level table with Javascript based on level euqaution.</p>
+        <p>Creating ($0.50 EXP): update this website. Auto populate level table with JavaScript based on level euqaution.</p>
       </article>
       <article class="post">
         <h4>level 2</h4>
@@ -96,10 +106,10 @@
           <span class="date">December 24, 2019</span>
         </h2>
         <p>Props should act as "pure" function, meaning not change its own input. Such as <code>function sum(a,b) { return a + b};</code></p>
-        <p>So...I've been thinking... React is more complex than I anticipated and I still need to master Javascript. I am getting more confused by React and will definitely need more time for the new concepts to sink in. And I wonder, the reason I wanted to use React is to create template for html pages, is there a way to do that with Vanilla Javascript? Maybe I need to look deeper into this option before I confuse myself further with React.</p>
-        <p>I don't think learning React was useless, I did learn something - I need to find solution from what I know already, and sink my teeth into Javascript first, instead of chasing after something else. </p>
-        <p>I will need to revisit my website and HLC website from Javascript lens.</p>
-        <p>This <a href="https://wesbos.com/template-strings-html/" target="_blank">article</a> from Wes Bos explains how to inject HTML using Javascript.</p>
+        <p>So...I've been thinking... React is more complex than I anticipated and I still need to master JavaScript. I am getting more confused by React and will definitely need more time for the new concepts to sink in. And I wonder, the reason I wanted to use React is to create template for html pages, is there a way to do that with Vanilla JavaScript? Maybe I need to look deeper into this option before I confuse myself further with React.</p>
+        <p>I don't think learning React was useless, I did learn something - I need to find solution from what I know already, and sink my teeth into JavaScript first, instead of chasing after something else. </p>
+        <p>I will need to revisit my website and HLC website from JavaScript lens.</p>
+        <p>This <a href="https://wesbos.com/template-strings-html/" target="_blank">article</a> from Wes Bos explains how to inject HTML using JavaScript.</p>
       </article>
       <article class="post">
         <h4>level 2</h4>
@@ -155,7 +165,7 @@
           <span class="divider">//</span>
           <span class="date">December 20, 2019</span>
         </h2>
-        <p>What is <code>promise()</code> in Javascript? A <code>promise</code> allows JavaScript to run asynchronously. Javascript typically runs in a singular thread and execute code in order. <code>Promise</code> allows JavaScript to check for conditions and decide which function to execute - whether is the <code>promise</code> is <code>resolved</code> or <code>rejected</code>.</p>
+        <p>What is <code>promise()</code> in JavaScript? A <code>promise</code> allows JavaScript to run asynchronously. JavaScript typically runs in a singular thread and execute code in order. <code>Promise</code> allows JavaScript to check for conditions and decide which function to execute - whether is the <code>promise</code> is <code>resolved</code> or <code>rejected</code>.</p>
         <h3>Example codes:</h3>
         <p>img1.callThisIfLoadedOrWhenLoaded(function() { <br>
         // loaded<br>
@@ -204,8 +214,8 @@
           <span class="date">December 17, 2019</span>
         </h2>
         <p>To use <code>state</code> and <code>constructor</code> in React properly, must call <code>super(props)</code> to use <code>this</code> in a <code>constructor</code>.</p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS" target="_blank">Object Oriented Javascript</a></p>
-        <p><a href="https://css-tricks.com/what-is-super-in-javascript/" target="_blank">What is super() in JS?</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS" target="_blank">Object Oriented JavaScript</a></p>
+        <p><a href="https://css-tricks.com/what-is-super-in-JavaScript/" target="_blank">What is super() in JS?</a></p>
         <p>What is the difference between <code>state</code> and <code>props</code>? My current understanding: <code>state</code> is used to show interactive state of React components, and <code>props</code>, stands for properties, is used to change the content of components.</p>
         <p>P.S. started the new EXP system and introduced $0.5 and $0.25 hourly rates for creating and consuming respectively. I wonder if this would deter me from learning...? Well, the idea is to stop me from constantly looking at tutorials and not actually doing the work myself. It's like watching basketball tutorials without ever touching a basketball.</p>
       </article>
@@ -246,8 +256,8 @@
           <span class="divider">//</span>
           <span class="date">December 13, 2019</span>
         </h2>
-        <p>Learn more about <code>this</code> in <a href="https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/" target="_blank">Javascript</a>.</p>
-        <p><code>Getter</code> in Javascript. Why use <code>getter</code>? <code>Getters</code> give you a way to define a property of an object, but they do not calculate the property's value until it is
+        <p>Learn more about <code>this</code> in <a href="https://dmitripavlutin.com/gentle-explanation-of-this-in-JavaScript/" target="_blank">JavaScript</a>.</p>
+        <p><code>Getter</code> in JavaScript. Why use <code>getter</code>? <code>Getters</code> give you a way to define a property of an object, but they do not calculate the property's value until it is
         accessed. A <code>getter</code> defers the cost of calculating the value until the value is needed, and if it is never needed, you
         never pay the cost.</p>
         <p>The value is calculated the first time the <code>getter</code> is called and is then cached so subsequent accesses return the cached
@@ -334,7 +344,7 @@
           <span class="divider">//</span>
           <span class="date">December 7, 2019</span>
         </h2>
-        <p>React can work without JSX. Each JSX is secretly a call to <code>React.createElement(component, props, ...children)</code>, and that's how compilers translate JSX to Javascript.</p>
+        <p>React can work without JSX. Each JSX is secretly a call to <code>React.createElement(component, props, ...children)</code>, and that's how compilers translate JSX to JavaScript.</p>
         <p>It is possible to create shorthand for React.createElement if we get tired of typing it all the time:</p>
         <code>
           const e = React.createElement; <br/>
@@ -384,7 +394,7 @@
           <span class="divider">//</span>
           <span class="date">December 2, 2019</span>
         </h2>
-        <p>Learning using <code>if</code> statemetns in React in Codecademy. <code>If</code> statement will not work inside JSX, but will work as regular javascript. Alternative workaround is to have JSX inside <code>if</code> statements.</p>
+        <p>Learning using <code>if</code> statemetns in React in Codecademy. <code>If</code> statement will not work inside JSX, but will work as regular JavaScript. Alternative workaround is to have JSX inside <code>if</code> statements.</p>
         <p><a href="https://discuss.codecademy.com/t/when-should-i-use-an-if-statement-a-ternary-operator-or-the-operator/404789" target="_blank">When to use</a> <code>Ternary</code>, <code>&&</code> and <code>if</code> statement: Choose the more concise version.</p>
         <ul>
           <li>the <code>&&</code> and <code>ternary</code> operators are more concise, choose either of these when possible</li>
@@ -411,7 +421,7 @@
           <span class="divider">//</span>
           <span class="date">November 30, 2019</span>
         </h2>
-        <p>Write Javascript program to automate opening and closing tabs. The intent is to open a new link tab, and automatically close the tab. And repeat through an array of links.</p>
+        <p>Write JavaScript program to automate opening and closing tabs. The intent is to open a new link tab, and automatically close the tab. And repeat through an array of links.</p>
         <p>I've figured out opening one link and automiatically closing after 2 seconds. However, I cannot figure out how to loop this behavior through an array. The speed of opening is faster than closing, so I ended up opening a bunch new tabs and only closing one tab.</p>
         <p>I will need to figure out how to call a function ONLY after the previous function is complete.</p>
       </article>
@@ -424,12 +434,12 @@
         <p>Continue learning React on <a href="https://www.codecademy.com/learn/react-101" target="_blank">Codecademy</a>.</p>
         <h3>Main takeaways:</h3>
         <ul>
-          <li>JSX is not Javascript nor HTML. Its syntax is like HTML, but it's an extension of Javascript. And you write JSX in JavaScript file.</li>
-          <li>You need "translator" to compile and translate JSX into Javascript. (Something like Babel? I needed to install Node for React to work... need to learn this later.)</li>
+          <li>JSX is not JavaScript nor HTML. Its syntax is like HTML, but it's an extension of JavaScript. And you write JSX in JavaScript file.</li>
+          <li>You need "translator" to compile and translate JSX into JavaScript. (Something like Babel? I needed to install Node for React to work... need to learn this later.)</li>
           <li><code>React</code> and <code>ReactDOM</code> are different. <code>React</code> is a JS library for buildig UI, <code>ReactDOM</code> is the JS library for React to interacte with DOM. You need to import both into JavaScript file for React to work properly.</li>
           <li>React uses Virtual DOM to reduce re-rendering DOM from scratch everytime something is updated. Virtual DOM is lightweight, so React compares current version of Virtual DOM from previous version to figure what changed, and only update the content that changed from previous version.</li>
           <li><strong>Analogy for Virtual DOM = Home Improvements</strong>: update and compare CAD/Sketchup plans, and remodel specific rooms that changed instead of rebuilding the whole house from scratch every time you want to do home improvements.</li>
-          <li>Call Javascript within JSX with <code>{ }</code>.</li>
+          <li>Call JavaScript within JSX with <code>{ }</code>.</li>
         </ul>
         <br/>
         <h3>Resources for <a href="https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html" target="_blank">using Git on the Command Line.</a></h3>
@@ -487,9 +497,9 @@
           <span class="divider">//</span>
           <span class="date">November 25, 2019</span>
         </h2>
-        <p>After spending sometime putting together the pages for HLC Plan Overview manually - literally putting in the html for every single page. I wonder if there are ways to automate it with templates. After some research, I came across static website, static website generator, and <a href="https://jamstack.org/" target="_blank">JAM</a> (Javascript, API and Markup)</p>
+        <p>After spending sometime putting together the pages for HLC Plan Overview manually - literally putting in the html for every single page. I wonder if there are ways to automate it with templates. After some research, I came across static website, static website generator, and <a href="https://jamstack.org/" target="_blank">JAM</a> (JavaScript, API and Markup)</p>
         <p>JAM allows developers to focus on front-end development and not having to worry about server coding. And it's lightweight so I don't have to get bogged down by CMSs like Wordpress. Which is exactly what I need. </p>
-        <p>I browsed <a href="https://www.staticgen.com/" target="_blank">StaticGen</a> for options. Since I'd like to continue using Javascript and not learn any new languages to develop templates and automate my website pages, I've decided on learning and using <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>.</p>
+        <p>I browsed <a href="https://www.staticgen.com/" target="_blank">StaticGen</a> for options. Since I'd like to continue using JavaScript and not learn any new languages to develop templates and automate my website pages, I've decided on learning and using <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>.</p>
         <p>Gatsby uses React for its template, so I'll be learning <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">React</a> so I can be proficient enough to play with and customize Gatsby starters templates. I can't wait to start JAMing soon!</p>
       </article>
       <article class="post">
@@ -510,9 +520,9 @@
           <span class="divider">//</span>
           <span class="date">November 23, 2019</span>
         </h2>
-        <p>Free Code Camp Javascript exercise: <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/replace-loops-using-recursion" target="_blank">replace loops using recursion</a>. Write a function that will continually add to itself, until it reaches 0. For example, 5+4+3+2+1.</p>
+        <p>Free Code Camp JavaScript exercise: <a href="https://www.freecodecamp.org/learn/JavaScript-algorithms-and-data-structures/basic-JavaScript/replace-loops-using-recursion" target="_blank">replace loops using recursion</a>. Write a function that will continually add to itself, until it reaches 0. For example, 5+4+3+2+1.</p>
         <p>I don't think I've understand the concept enough to explain why... and I don't understand why I must learn it - how is it relevant to building pratical websites, if I don't want to do fractal math?</p>
-        <p><a href="https://www.sitepoint.com/recursion-functional-javascript/" target="_blank">This website</a> I found helped explain what is recursion... that supplement Free Code Camp.</p>
+        <p><a href="https://www.sitepoint.com/recursion-functional-JavaScript/" target="_blank">This website</a> I found helped explain what is recursion... that supplement Free Code Camp.</p>
       </article>
       <article class="post">
         <h4>level 2</h4>
@@ -537,13 +547,13 @@
           <span class="divider">//</span>
           <span class="date">November 16, 2019</span>
         </h2>
-        <p>Added javascript and toggle interaction works. However, due to different z-index for header navbar and hamburger menu, they create another issue. The expanded hamburger menu should cover up everything, including the header, but hamburger icon is inside the header. Therefoe, it's either the whole menu covers everything up, including the hamburger icon. Or hamburger icon is showing, but header is also on top of expanded menu.</p>
+        <p>Added JavaScript and toggle interaction works. However, due to different z-index for header navbar and hamburger menu, they create another issue. The expanded hamburger menu should cover up everything, including the header, but hamburger icon is inside the header. Therefoe, it's either the whole menu covers everything up, including the hamburger icon. Or hamburger icon is showing, but header is also on top of expanded menu.</p>
         <p>Potential solution:</p>
         <ol>
           <li>Move hamburger icon out of <code>header</code>, and into <code>nav</code>.</li>
           <li>Hide rest of the items in header, except hamburger icon</li>
         </ol>
-        <p>Decided to go with option 2 and hide header when clicking on hamburger icon. So the changes are just within CSS and Javascript, and no need to shuffle the structure in HTML.</p>
+        <p>Decided to go with option 2 and hide header when clicking on hamburger icon. So the changes are just within CSS and JavaScript, and no need to shuffle the structure in HTML.</p>
         <p>Next step: add navigation at the footer.</p>
       </article>
 
@@ -618,8 +628,8 @@
           <span class="divider">//</span>
           <span class="date">November 5, 2019</span>
         </h2>
-        <p>Learning to build hamburger menu based on a demo. <a href="https://www.cssscript.com/basic-hamburger-toggle-menu-css-vanilla-javascript/" target="_blank">view code here.</a></p>
-        <a href="https://www.cssscript.com/demo/basic-hamburger-toggle-menu-css-vanilla-javascript/" class="button" target="_blank">View Demo</a>
+        <p>Learning to build hamburger menu based on a demo. <a href="https://www.cssscript.com/basic-hamburger-toggle-menu-css-vanilla-JavaScript/" target="_blank">view code here.</a></p>
+        <a href="https://www.cssscript.com/demo/basic-hamburger-toggle-menu-css-vanilla-JavaScript/" class="button" target="_blank">View Demo</a>
       </article>
 
       <article class="post">
@@ -663,7 +673,7 @@
           <span class="divider">//</span>
           <span class="date">October 30, 2019</span>
         </h2>
-        <p>Write Javascript to calculate parcel areas from pixel in Adobe Illustrator to acres. Calculate 9 parcels area for two different alternatives.</p>
+        <p>Write JavaScript to calculate parcel areas from pixel in Adobe Illustrator to acres. Calculate 9 parcels area for two different alternatives.</p>
         <p>Create arrays to store parcel names and parcel areas, and used console.log to display acreage for each parcel.</p>
         <p>Note: may create simple apps to calculate Illustrator area convertions, such as pixel to SF or acres, and account for different scales for the drawings.</p>
       </article>
@@ -801,7 +811,7 @@
           <li>Put backround layer in the top <code>div</code>, foreground at the last <code>div</code></li>
           <li>Use <code>background-image</code> to load each image layer in CSS</li>
           <li>Create <code><a href="https://www.w3schools.com/tags/att_global_data.asp" target="_blank">data-</a></code> attribute for scrolling speed, so JavaScipt can control the translation as mouse scrolls</li>
-          <li>Write javascript function that has event listener for mouse scroll. As mouse scrolls, each image layer will move at a different speed assigned by the <code>data-speed</code> attribute</li>
+          <li>Write JavaScript function that has event listener for mouse scroll. As mouse scrolls, each image layer will move at a different speed assigned by the <code>data-speed</code> attribute</li>
         </ol>
         <p>note: will need to find a good image for parallax layers. And design the landing page for The Plan for the HLC.</p>
 
