@@ -273,14 +273,14 @@ th, td{
   width: 33%;
 }
 
-.image{
+img.image{
   display: block;
   width: 100%;
-  height: 50vh;
+  /* height: 50vh; */
   /* background-color: blue; */
-  background-image: url('../img/MSI GS.png');
+  /* background-image: url('../img/MSI GS.png');
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 @media only screen and (min-width: 360px){

@@ -1,7 +1,18 @@
-// DOM - level table
-const PRINT_LEVEL = document.querySelectorAll('.level-table');
-const PRINT_EXP = document.querySelectorAll('.exp-table');
-const PRINT_EXP_TNL = document.querySelectorAll('.exp-tnl');
+//automatically set all anchor tags with http link to opening a new tab
+const ANCHOR_TAGS = document.querySelectorAll('a');
+
+// if <a> has href attribute that starts with http...
+for (i = 0; i < ANCHOR_TAGS.length; i++) {
+    let anchorHref = ANCHOR_TAGS[i].getAttribute('href'); //href link
+    anchorHref = anchorHref.slice(0, 4); //grab http
+
+    //if <a href> starts with http
+    if (anchorHref == 'http') {
+        //set target attribute to _blank
+        ANCHOR_TAGS[i].setAttribute('target', '_blank');
+    }
+}
+
 
 //DOM - log components
 const LEVEL_DISPLAY = document.querySelectorAll('.level-display');
@@ -51,6 +62,11 @@ function level(level){
     return Math.floor((15 * Math.pow(level,3)) / 5);
 }
 
+// DOM - level table
+const PRINT_LEVEL = document.querySelectorAll('.level-table');
+const PRINT_EXP = document.querySelectorAll('.exp-table');
+const PRINT_EXP_TNL = document.querySelectorAll('.exp-tnl');
+
 //current level display based on experience points_EXP
 function currentLevel(exp){
     if (exp <= level(1)) {
@@ -82,4 +98,6 @@ for (i = 0; i < PRINT_LEVEL.length; i++) {
     PRINT_EXP[i].innerHTML = `$${level(i + 1)} EXP`;
     PRINT_EXP_TNL[i].innerHTML = `$${level(i + 2) - level(i + 1)} EXP`;
 }
+
+
 
