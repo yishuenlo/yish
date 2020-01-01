@@ -40,14 +40,29 @@
       <article class="post">
         <h4 class="level-display">level 2</h4>
         <h2>
-          <span class="current-exp">$76.00</span>
+          <span class="current-exp">$78.50</span>
+          <span class="divider">//</span>
+          <span class="date">January 1, 2020</span>
+        </h2>
+        <p>Consuming ($0.50 EXP): NodeList vs Array. NodeList is a browser API, whereas array is for JavaScript. While NodeList is array-like, it doens't have array funciton such as push(), pop(), slice()...etc. And you usually convert NodeList to array if other people are using it, since they will be expeciting an array instead of NodeList.</p>
+        <p>
+          <code>let Array = [].slice.call(document.querySelectorAll('p'));</code><br>
+          <code>let nodeList = document.querySelectorAll('p');</code>
+        </p>
+        <p>Next step: looking to implement <a href="https://dev.to/ekafyi/lazy-loading-images-with-vanilla-javascript-2fbj">lazy loading</a> for the posts.</p>
+      </article>
+      <article class="post">
+        <h4 class="level-display">level 2</h4>
+        <h2>
+          <span class="current-exp">$78.00</span>
           <span class="divider">//</span>
           <span class="date">December 31, 2019</span>
         </h2>
-        <p>Creating 3 hrs ($3.00 EXP): Record Raman Numeral Converter into my mini JS website. Created <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/caesars-cipher">Caesars Cipher</a> to decode <a href="https://en.wikipedia.org/wiki/ROT13">ROT13</a> code.</p>
-
+        <p>Creating ($2.50 EXP): Record Raman Numeral Converter into my mini JS website. Created <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/caesars-cipher">Caesars Cipher</a> to decode <a href="https://en.wikipedia.org/wiki/ROT13">ROT13</a> code.</p>
         <p>I will need to clean up Mini JS stylel to accomodate for multiple mini JavaScript programs. Such as classes for
           display and ID for interacting with JavaScript.</p>
+
+        <p>Completed one mini JavaScript exercise ($2 EXP): Caesars Cipher. Created regex to identify non-characters. If the input is a character, shift 13 spaces to find the right letter. Somehow the character regex didn't work, and would toggle between <code>true</code> and <code>false</code> even though it's the exact same input... but non-character regex worked, so I had to use double negative.</p>
         <a href="https://yishuenlo.github.io/mini-js/" class="button">View Website</a>
         <a href="https://github.com/yishuenlo/yish/blob/gh-pages/quests/js/ROT13.js" class="button">View ROT13 Decoder</a>
       </article>

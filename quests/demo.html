@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/ROT13.js" async></script>
+    <script src="js/lazyLoading.js" async></script>
     <title>Demo</title>
 </head>
 <body>
-    
+    <ul class="cats">
+        <li class="cat">
+            <img class="cat__img" src="https://cataas.com/cat?width=300&i=1" alt="" />
+            <strong class="cat__name">Bustopher Jones</strong>
+        </li>
+        <li class="cat">
+            <img class="cat__img" src="https://cataas.com/cat?width=300&i=1" alt="" />
+            <strong class="cat__name">Bustopher Jones</strong>
+        </li>
+        <li class="cat">
+            <img class="cat__img" src="https://cataas.com/cat?width=300&i=1" alt="" />
+            <strong class="cat__name">Bustopher Jones</strong>
+        </li>
+        <li class="cat">
+            <img class="cat__img lazy" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            <noscript>
+                <img class="cat__img" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            </noscript>
+            <strong class="cat__name">Growltiger</strong>
+        </li>
+        <li class="cat">
+            <img class="cat__img lazy" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            <noscript>
+                <img class="cat__img" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            </noscript>
+            <strong class="cat__name">Growltiger</strong>
+        </li>
+        <li class="cat">
+            <img class="cat__img lazy" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            <noscript>
+                <img class="cat__img" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            </noscript>
+            <strong class="cat__name">Growltiger</strong>
+        </li>
+        <li class="cat">
+            <img class="cat__img lazy" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            <noscript>
+                <img class="cat__img" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            </noscript>
+            <strong class="cat__name">Growltiger</strong>
+        </li>
+        
+    </ul>
+
 </body>
 </html>

@@ -1,3 +1,10 @@
+//lazy laoding
+const POSTS = document.querySelectorAll('.post');
+
+//load first 5 posts, use lazy loading for the rest
+// POST[5] TO POST[POST.LENGTH-1]
+
+
 //automatically set all anchor tags with http link to opening a new tab
 const ANCHOR_TAGS = document.querySelectorAll('a');
 
@@ -52,10 +59,10 @@ window.onload = recordDate;
 
 
 // experience points 
-const TRAIN_CONSUME_EXP = 0.25;
-const TRAIN_CREATE_EXP = 0.50;
+const TRAIN_CONSUME_EXP = 0.50;
+const TRAIN_CREATE_EXP = 1.00;
 const QUEST_TUTORIAL_EXP = 5;
-const QUEST_MINIPROJ_EXP = 2; 
+const QUEST_MINIJS_EXP = 2; 
 
 //exp calculator 
 function level(level){
