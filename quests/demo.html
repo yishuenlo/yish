@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/lazyLoading.js" async></script>
+    <script src="js/lazyLoading.js" defer></script>
     <title>Demo</title>
 </head>
 <body>
@@ -29,28 +29,51 @@
             <strong class="cat__name">Growltiger</strong>
         </li>
         <li class="cat">
-            <img class="cat__img lazy" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            <img class="cat__img lazy"
+                src="https://cdn.glitch.com/3a5b333c-942b-4088-9930-e7ea1e516118%2Fplaceholder.png?v=1560442648212"
+                data-src="https://cataas.com/cat?width=300&i=5" alt="" />
             <noscript>
                 <img class="cat__img" src="https://cataas.com/cat?width=300&i=5" alt="" />
             </noscript>
             <strong class="cat__name">Growltiger</strong>
         </li>
         <li class="cat">
-            <img class="cat__img lazy" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            <img class="cat__img lazy"
+                src="https://cdn.glitch.com/3a5b333c-942b-4088-9930-e7ea1e516118%2Fplaceholder.png?v=1560442648212"
+                data-src="https://cataas.com/cat?width=300&i=5" alt="" />
             <noscript>
                 <img class="cat__img" src="https://cataas.com/cat?width=300&i=5" alt="" />
             </noscript>
             <strong class="cat__name">Growltiger</strong>
         </li>
         <li class="cat">
-            <img class="cat__img lazy" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            <img class="cat__img lazy"
+                src="https://cdn.glitch.com/3a5b333c-942b-4088-9930-e7ea1e516118%2Fplaceholder.png?v=1560442648212"
+                data-src="https://cataas.com/cat?width=300&i=5" alt="" />
             <noscript>
                 <img class="cat__img" src="https://cataas.com/cat?width=300&i=5" alt="" />
             </noscript>
             <strong class="cat__name">Growltiger</strong>
         </li>
+        <li class="cat">
+            <img class="cat__img lazy"
+                src="https://cdn.glitch.com/3a5b333c-942b-4088-9930-e7ea1e516118%2Fplaceholder.png?v=1560442648212"
+                data-src="https://cataas.com/cat?width=300&i=5" alt="" />
+            <noscript>
+                <img class="cat__img" src="https://cataas.com/cat?width=300&i=5" alt="" />
+            </noscript>
+            <strong class="cat__name">Growltiger</strong>
+        </li>
+
         
     </ul>
+    <noscript>
+        <style>
+            .lazy {
+                display: none;
+            }
+        </style>
+    </noscript>
 
 </body>
 </html>
