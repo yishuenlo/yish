@@ -41,6 +41,10 @@ a:hover{
   border-bottom: 3px solid var(--accent);
 }
 
+#codewar-badge {
+  border-bottom: 0px;
+}
+
 .header-container{
   margin: 2em auto;
 }
