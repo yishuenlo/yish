@@ -40,19 +40,24 @@
       <article class="post">
         <h4 class="level-display">level 3</h4>
         <h2>
-          <span class="current-exp">$101.00</span>
+          <span class="current-exp">$104.00</span>
           <span class="divider">//</span>
           <span class="date">January 10, 2020</span>
         </h2>
-        <p>Code Challenge on Code War ($3.00 EXP): <a
-            href="https://www.codewars.com/kata/545a4c5a61aa4c6916000755/javascript">Find the middle number</a></p>
+        <p><strong>Code Challenge on Code War ($6.00 EXP)</strong>: <a
+            href="https://www.codewars.com/kata/545a4c5a61aa4c6916000755/javascript">Find the middle number</a> and <a href="https://www.codewars.com/kata/52f3149496de55aded000410/javascript">Summing a number's digits</a></p>
         <p>Learned to use <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">Array.prototype.sort()</a></code>. The caveat with <code>.sort()</code> is that it sorts with the first digit, since it converts array elements to strings and compare them in UTF-16 code unit order. For example, <code>.sort()</code> will see 10 as smaller than 5, because 10 starts with 1. In order for <code>.sort()</code> to work properly and truly sorting numbers from small to large, you must write function to let it knows how to compare: <code>.sort((a,b) => a - b)</code>.</p>
         <p>compareFunction within <code>.sort()</code> seems like simple substraction, but it's running it's own calculation comparing <code>a</code> and <code>b</code>. With <code>a -b</code>, if <code>a</code> is less than <code>b</code>, the function will <code>return -1</code>, thus placing <code>a</code> before <code>b</code>. If <code>a</code> is greater than <code>b</code>, funtion will <code>return 1</code>, and place <code>a</code> after <code>b</code>. If <code>a = b</code>, then function will <code>return 0</code>.</p>
         <p>To sort array into descending order, use <code>b - a</code>.</p>
         <p>Also, if you don't want to have <code>.sort()</code> apply to original array, must clone the origin array to another varible with <code>[...array]</code>, instead of <code>newArr = oldArr</code>. Even if you apply <code>.sort()</code> to <code>newArr</code>, <code>oldArr</code> will be sorted as well.</p>
-        <p>Consuming MDN JavasScript Array <a
+        <p>Learn
+          <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs">Math.abs()</a></code>
+          to convert negative numbers to positive numbers. And use
+          <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">.reduce()</a></code>
+          to add all numbers within an array.</p>
+        <p><strong>Consuming MDN JavasScript Array <a
           href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays">tutorial</a> ($0.50
-        EXP). Array method:</p>
+        EXP).</strong> Array method:</p>
         <ul>
           <li>.push() : push elements into end of array.</li>
           <li>.pop() : pop out elements from end of array.</li>
@@ -62,6 +67,7 @@
           <li>.join() : turn array into string</li>
           <li>.toString() : turn array into string, with comma as separator</li>
         </ul>
+
       </article>
       <article class="post">
         <h4 class="level-display">level 3</h4>
