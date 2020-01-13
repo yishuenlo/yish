@@ -24,7 +24,6 @@ for (i = 0; i < ANCHOR_TAGS.length; i++) {
 //DOM - log components
 const LEVEL_DISPLAY = document.querySelectorAll('.level-display');
 const CURRENT_EXP = document.querySelectorAll('.current-exp');
-const TODAY_DATE = document.querySelectorAll('.date'); 
 const NAV_BAR = document.querySelector('.nav-ul');
 
 NAV_BAR.innerHTML = `
@@ -33,29 +32,8 @@ NAV_BAR.innerHTML = `
     <li><a href="about.html">about</a></li>
 `;
 
-//display today's date
-//problem: how do you 'record' previous dates?
-let showUp = true;
-let printDate;
-function printToday(){
-    let today = new Date();
-    let monthNames = [
-        'January', 'February', 'March',
-        'April', 'May', 'June', 'July',
-        'August', 'September', 'October', 'November', 'December'
-    ];
-    let date = `${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
-    return printDate = date.toString();
-}
 
-function recordDate(){
-    if(showUp){
-        printToday();
-    }
-    return TODAY_DATE[0].innerHTML = printDate;
-}
 
-window.onload = recordDate;
 
 
 // experience points 
@@ -105,6 +83,27 @@ for (i = 0; i < PRINT_LEVEL.length; i++) {
     PRINT_EXP[i].innerHTML = `$${level(i + 1)} EXP`;
     PRINT_EXP_TNL[i].innerHTML = `$${level(i + 2) - level(i + 1)} EXP`;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
