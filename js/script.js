@@ -1,5 +1,5 @@
 //lazy laoding
-const POSTS = document.querySelectorAll('.post');
+// const POSTS = document.querySelectorAll('.post');
 
 //load first 5 posts, use lazy loading for the rest
 // POST[5] TO POST[POST.LENGTH-1]

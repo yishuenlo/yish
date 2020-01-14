@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" async></script>
+    <script src="js/recordDate.js" async></script>
     <title>Yish | Code</title>
   </head>
   <body>
@@ -37,6 +38,21 @@
     </header>
 
     <main>
+      <article class="post">
+        <h4 class="level-display">level 3</h4>
+        <h2>
+          <span class="current-exp">$126.00</span>
+          <span class="divider">//</span>
+          <span class="dates"></span>
+        </h2>
+        <p>Added script to automatically populate date. My question would be, would <code>.unshift()</code> today's date into an <em>empty</em> array would be there tomorrow? Or the array would refresh to an empty array again? Guess we will find out tomorrow. Dun dun dun! I think they will all refresh and reset, since the data is not stored somewhere...</p>
+        <p>Current logic for pushing today's date into the array: I created two variables to track date and content, if the date and content are different, then generate and print today's date. The list is then "supposedly" being kept in an array, that will loop through DOM to populate the dates.</p>
+        <p><strong>Code Challenge on Code War ($6.00 EXP)</strong>: <a href="https://www.codewars.com/kata/541c8630095125aba6000c00/solutions/javascript">digital root</a>, <a href="https://www.codewars.com/kata/577d0a117a3dbd36170001c2/javascript">VaccineNation</a></p>
+        <p><a href="https://www.sitepoint.com/recursion-functional-javascript/">Recursion</a> in JavaScript. It's similar to loops, but calling function within the function itself. Just like loops, you must identify when it ends, or you will get <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Too_much_recursion?utm_source=mozilla&utm_medium=firefox-console-errors&utm_campaign=default">InternalError: too much recursion</a></p>
+        <p><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for... in</a></code> iterate over all enumberable properties object that are keyed by strings. What are <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">enumerable properties</a>? Seems like enumerable properties are properties from Object Literals, and not from prototypes. for...in is built for iterating object properties, not recommended for use with arrays.</p>
+        <p>Syntax: <code>for (variable in object)</code></p>
+      </article>
+
       <article class="post">
         <h4 class="level-display">level 3</h4>
         <h2>
