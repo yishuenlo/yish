@@ -37,13 +37,22 @@
       </div>
     </header>
 
-    <main>
+    <main><article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$127.00</span>
+        <span class="divider">//</span>
+        <span class="dates">January 14, 2020</span>
+      </h2>
+      <p>And~~~ the auto-populating date doesn't work XD Just as I suspected, it only remembers the first day, and the rest is gone like Goldfish's memory.</p>
+      <p><strong>Creating: solving problem on Code Wars ($1.00 EXP).</strong> Still working on the problem...</p>
+    </article>
       <article class="post">
         <h4 class="level-display">level 3</h4>
         <h2>
           <span class="current-exp">$126.00</span>
           <span class="divider">//</span>
-          <span class="dates"></span>
+          <span class="dates">January 13, 2020</span>
         </h2>
         <p>Added script to automatically populate date. My question would be, would <code>.unshift()</code> today's date into an <em>empty</em> array would be there tomorrow? Or the array would refresh to an empty array again? Guess we will find out tomorrow. Dun dun dun! I think they will all refresh and reset, since the data is not stored somewhere...</p>
         <p>Current logic for pushing today's date into the array: I created two variables to track date and content, if the date and content are different, then generate and print today's date. The list is then "supposedly" being kept in an array, that will loop through DOM to populate the dates.</p>
