@@ -1,428 +1,591 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" async></script>
-    <script src="js/recordDate.js" async></script>
-    <title>Yish | Code</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-container">
-        <nav>
-          <a href="index.html"><img src="img/yish-logo.png" alt="yish logo" class="site-logo"></a>
-          <ul class="nav-ul">
-            <!-- <li><a href="index.html">code</a></li> -->
-            <!-- <li><a href="process.html">process</a></li>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" async></script>
+  <script src="js/recordDate.js" async></script>
+  <title>Yish | Code</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <nav>
+        <a href="index.html"><img src="img/yish-logo.png" alt="yish logo" class="site-logo"></a>
+        <ul class="nav-ul">
+          <!-- <li><a href="index.html">code</a></li> -->
+          <!-- <li><a href="process.html">process</a></li>
             <li><a href="about.html">about</a></li> -->
-          </ul>
-        </nav>
-        <div class="reward-container">
-          <h1 class="heading">Code Towards A </br><span class="reward">VR Laptop</span></h1>
-          <p>A documentation for build a coding habit. Read <a href="process.html">process</a> to learn more.</p>
-          <ul class="social-icons-container">
-            <li class="icon-list"><a id="profile-link" href="https://github.com/yishuenlo" >
-              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.57 32"><defs></defs><title>Github</title><path class="icons" d="M16.29,1a15,15,0,0,0-4.75,29.23c.75.14,1-.32,1-.72s0-1.3,0-2.55c-4.17.91-5.05-2-5.05-2a4.05,4.05,0,0,0-1.67-2.2c-1.36-.93.1-.91.1-.91a3.16,3.16,0,0,1,2.3,1.55,3.19,3.19,0,0,0,4.37,1.24,3.16,3.16,0,0,1,1-2c-3.33-.38-6.83-1.67-6.83-7.41a5.8,5.8,0,0,1,1.54-4,5.4,5.4,0,0,1,.15-4s1.26-.4,4.12,1.54a14.7,14.7,0,0,1,3.76-.51A14.68,14.68,0,0,1,20,8.76c2.87-1.94,4.12-1.54,4.12-1.54a5.35,5.35,0,0,1,.15,4,5.8,5.8,0,0,1,1.54,4c0,5.76-3.5,7-6.84,7.4a3.61,3.61,0,0,1,1,2.78c0,2,0,3.62,0,4.11s.27.87,1,.72A15,15,0,0,0,16.29,1Z"/></svg>
+        </ul>
+      </nav>
+      <div class="reward-container">
+        <h1 class="heading">Code Towards A </br><span class="reward">VR Laptop</span></h1>
+        <p>A documentation for build a coding habit. Read <a href="process.html">process</a> to learn more.</p>
+        <ul class="social-icons-container">
+          <li class="icon-list"><a id="profile-link" href="https://github.com/yishuenlo">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.57 32">
+                <defs></defs>
+                <title>Github</title>
+                <path class="icons"
+                  d="M16.29,1a15,15,0,0,0-4.75,29.23c.75.14,1-.32,1-.72s0-1.3,0-2.55c-4.17.91-5.05-2-5.05-2a4.05,4.05,0,0,0-1.67-2.2c-1.36-.93.1-.91.1-.91a3.16,3.16,0,0,1,2.3,1.55,3.19,3.19,0,0,0,4.37,1.24,3.16,3.16,0,0,1,1-2c-3.33-.38-6.83-1.67-6.83-7.41a5.8,5.8,0,0,1,1.54-4,5.4,5.4,0,0,1,.15-4s1.26-.4,4.12,1.54a14.7,14.7,0,0,1,3.76-.51A14.68,14.68,0,0,1,20,8.76c2.87-1.94,4.12-1.54,4.12-1.54a5.35,5.35,0,0,1,.15,4,5.8,5.8,0,0,1,1.54,4c0,5.76-3.5,7-6.84,7.4a3.61,3.61,0,0,1,1,2.78c0,2,0,3.62,0,4.11s.27.87,1,.72A15,15,0,0,0,16.29,1Z" />
+              </svg>
             </a></li>
-            <li class="icon-list"><a id="profile-link" href="https://www.freecodecamp.org/yishuen" >
-              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs></defs><title>freeCodeCamp</title><path class="icons" d="M7.21,6.78a.82.82,0,1,0-1-1.31,13.22,13.22,0,0,0,0,21.06.81.81,0,0,0,1.15-.16.81.81,0,0,0-.15-1.15,11.56,11.56,0,0,1,0-18.44ZM25.8,5.47a.83.83,0,0,0-1.15.16.81.81,0,0,0,.15,1.15,11.56,11.56,0,0,1,0,18.44.83.83,0,0,0-.16,1.15.84.84,0,0,0,.66.33.81.81,0,0,0,.49-.17,13.22,13.22,0,0,0,0-21.06ZM23,23.09H9a.83.83,0,0,0,0,1.65H23a.83.83,0,0,0,0-1.65Zm-8.44-1.63a1.71,1.71,0,0,0,.44,0,8.54,8.54,0,0,1-1.19-1.08c-1-1.38-.77-2.84.64-4.05s1.41-1.56.78-2.92a1.79,1.79,0,0,1,1.52,2,3.55,3.55,0,0,0-.06,1,.76.76,0,0,0,1,.69.7.7,0,0,0,.61-1,5.21,5.21,0,0,1-.08-.57l.23-.08a8.15,8.15,0,0,1,.72,1.41c.51,1.65-.54,2.77-1.55,3.92,1.25.24,3.05-1.71,3.41-3.53.55-2.71-.93-6.06-2.95-6.5a11.27,11.27,0,0,1,.45,1.07c.13.43.23.92-.33,1.12s-.78-.28-.89-.71c-.16-.63-.26-1.28-.39-1.93a4.11,4.11,0,0,0-3-3.35,7.63,7.63,0,0,0-1.3-.1c1.72,2,1.79,2.87.53,5-.51.88-1.06,1.73-1.58,2.6C9.7,17.59,11.88,20.66,14.54,21.46Z"/></svg>
+          <li class="icon-list"><a id="profile-link" href="https://www.freecodecamp.org/yishuen">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <defs></defs>
+                <title>freeCodeCamp</title>
+                <path class="icons"
+                  d="M7.21,6.78a.82.82,0,1,0-1-1.31,13.22,13.22,0,0,0,0,21.06.81.81,0,0,0,1.15-.16.81.81,0,0,0-.15-1.15,11.56,11.56,0,0,1,0-18.44ZM25.8,5.47a.83.83,0,0,0-1.15.16.81.81,0,0,0,.15,1.15,11.56,11.56,0,0,1,0,18.44.83.83,0,0,0-.16,1.15.84.84,0,0,0,.66.33.81.81,0,0,0,.49-.17,13.22,13.22,0,0,0,0-21.06ZM23,23.09H9a.83.83,0,0,0,0,1.65H23a.83.83,0,0,0,0-1.65Zm-8.44-1.63a1.71,1.71,0,0,0,.44,0,8.54,8.54,0,0,1-1.19-1.08c-1-1.38-.77-2.84.64-4.05s1.41-1.56.78-2.92a1.79,1.79,0,0,1,1.52,2,3.55,3.55,0,0,0-.06,1,.76.76,0,0,0,1,.69.7.7,0,0,0,.61-1,5.21,5.21,0,0,1-.08-.57l.23-.08a8.15,8.15,0,0,1,.72,1.41c.51,1.65-.54,2.77-1.55,3.92,1.25.24,3.05-1.71,3.41-3.53.55-2.71-.93-6.06-2.95-6.5a11.27,11.27,0,0,1,.45,1.07c.13.43.23.92-.33,1.12s-.78-.28-.89-.71c-.16-.63-.26-1.28-.39-1.93a4.11,4.11,0,0,0-3-3.35,7.63,7.63,0,0,0-1.3-.1c1.72,2,1.79,2.87.53,5-.51.88-1.06,1.73-1.58,2.6C9.7,17.59,11.88,20.66,14.54,21.46Z" />
+              </svg>
             </a></li>
 
-            <li class="icon-list"><a id="profile-link" href="https://www.linkedin.com/in/yishuen-lo" >
-              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.57 32"><defs></defs><title>LinkedIn</title><path class="icons" d="M16.29,1a15,15,0,1,0,15,15A15,15,0,0,0,16.29,1Zm-5,24.15H7.58V13.09h3.67ZM9.37,11.44a2.31,2.31,0,0,1-2.25-2.3A2.35,2.35,0,0,1,9.39,6.85,2.37,2.37,0,0,1,11.7,9.21,2.33,2.33,0,0,1,9.37,11.44ZM25.44,25.11H21.67c0-1.8,0-3.61,0-5.42a17,17,0,0,0-.05-1.89c-.09-.88-.43-1.61-1.43-1.77a2,2,0,0,0-2.29,1.2A4.91,4.91,0,0,0,17.53,19c-.05,2,0,4.05,0,6.15H13.76v-12h3.48c0,.46,0,.88.07,1.43l.67-.61a4.93,4.93,0,0,1,5.47-.78,4,4,0,0,1,2,3.78C25.49,19.6,25.44,22.32,25.44,25.11Z"/></svg>
+          <li class="icon-list"><a id="profile-link" href="https://www.linkedin.com/in/yishuen-lo">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.57 32">
+                <defs></defs>
+                <title>LinkedIn</title>
+                <path class="icons"
+                  d="M16.29,1a15,15,0,1,0,15,15A15,15,0,0,0,16.29,1Zm-5,24.15H7.58V13.09h3.67ZM9.37,11.44a2.31,2.31,0,0,1-2.25-2.3A2.35,2.35,0,0,1,9.39,6.85,2.37,2.37,0,0,1,11.7,9.21,2.33,2.33,0,0,1,9.37,11.44ZM25.44,25.11H21.67c0-1.8,0-3.61,0-5.42a17,17,0,0,0-.05-1.89c-.09-.88-.43-1.61-1.43-1.77a2,2,0,0,0-2.29,1.2A4.91,4.91,0,0,0,17.53,19c-.05,2,0,4.05,0,6.15H13.76v-12h3.48c0,.46,0,.88.07,1.43l.67-.61a4.93,4.93,0,0,1,5.47-.78,4,4,0,0,1,2,3.78C25.49,19.6,25.44,22.32,25.44,25.11Z" />
+              </svg>
             </a></li>
-          </ul>
-        </div>
+        </ul>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main><article class="post">
+  <main>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$128.00</span>
+        <span class="divider">//</span>
+        <span class="dates">January 15, 2020</span>
+      </h2>
+      <p>Attemping 6 kyu challenges on Code Wars. The difficulty increased expontentially... while it's extremely
+        frustrating, I realized I don't know what I don't know. So, I've decided to go back to the basics and learn
+        JavaScript <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS">Turtorials</a>
+        from MDN. Starting with objects.</p>
+      <p>Maybe I'll still do easy 7 kyu warmups, so I still get my daily practice in.</p>
+    </article>
+
+    <article class="post">
       <h4 class="level-display">level 3</h4>
       <h2>
         <span class="current-exp">$127.00</span>
         <span class="divider">//</span>
         <span class="dates">January 14, 2020</span>
       </h2>
-      <p>And~~~ the auto-populating date doesn't work XD Just as I suspected, it only remembers the first day, and the rest is gone like Goldfish's memory.</p>
+      <p>And~~~ the auto-populating date doesn't work XD Just as I suspected, it only remembers the first day, and the
+        rest is gone like Goldfish's memory.</p>
       <p><strong>Creating: solving problem on Code Wars ($1.00 EXP).</strong> Still working on the problem...</p>
     </article>
-      <article class="post">
-        <h4 class="level-display">level 3</h4>
-        <h2>
-          <span class="current-exp">$126.00</span>
-          <span class="divider">//</span>
-          <span class="dates">January 13, 2020</span>
-        </h2>
-        <p>Added script to automatically populate date. My question would be, would <code>.unshift()</code> today's date into an <em>empty</em> array would be there tomorrow? Or the array would refresh to an empty array again? Guess we will find out tomorrow. Dun dun dun! I think they will all refresh and reset, since the data is not stored somewhere...</p>
-        <p>Current logic for pushing today's date into the array: I created two variables to track date and content, if the date and content are different, then generate and print today's date. The list is then "supposedly" being kept in an array, that will loop through DOM to populate the dates.</p>
-        <p><strong>Code Challenge on Code War ($6.00 EXP)</strong>: <a href="https://www.codewars.com/kata/541c8630095125aba6000c00/solutions/javascript">digital root</a>, <a href="https://www.codewars.com/kata/577d0a117a3dbd36170001c2/javascript">VaccineNation</a></p>
-        <p><a href="https://www.sitepoint.com/recursion-functional-javascript/">Recursion</a> in JavaScript. It's similar to loops, but calling function within the function itself. Just like loops, you must identify when it ends, or you will get <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Too_much_recursion?utm_source=mozilla&utm_medium=firefox-console-errors&utm_campaign=default">InternalError: too much recursion</a></p>
-        <p><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for... in</a></code> iterate over all enumberable properties object that are keyed by strings. What are <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">enumerable properties</a>? Seems like enumerable properties are properties from Object Literals, and not from prototypes. for...in is built for iterating object properties, not recommended for use with arrays.</p>
-        <p>Syntax: <code>for (variable in object)</code></p>
-      </article>
 
-      <article class="post">
-        <h4 class="level-display">level 3</h4>
-        <h2>
-          <span class="current-exp">$120.00</span>
-          <span class="divider">//</span>
-          <span class="dates">January 12, 2020</span>
-        </h2>
-        <p><strong>Code Challenge on Code War ($9.00 EXP)</strong>: <a href="https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9">Shortest word</a>, <a href="https://www.codewars.com/kata/57a049e253ba33ac5e000212">factorial</a>, <a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1">isogram</a>, <a href="https://www.codewars.com/kata/514b92a657cdc65150000006">multiple of 3 or 5</a></p>
-        <p>Learned about <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min">Math.min()</a></code> to return the smallest number. If entering array into the argument, must use <code>...array</code>. There is also <code>Math.max()</code> to find the largest number.</p>
-        <p>Learned using <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set()</a></code> constructor's property <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/size">.size</a></code> to return number of unique elements in a <code>Set</code> object. This is espeically helpful for the isogram challenge.</p>
-      </article>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$126.00</span>
+        <span class="divider">//</span>
+        <span class="dates">January 13, 2020</span>
+      </h2>
+      <p>Added script to automatically populate date. My question would be, would <code>.unshift()</code> today's date
+        into an <em>empty</em> array would be there tomorrow? Or the array would refresh to an empty array again? Guess
+        we will find out tomorrow. Dun dun dun! I think they will all refresh and reset, since the data is not stored
+        somewhere...</p>
+      <p>Current logic for pushing today's date into the array: I created two variables to track date and content, if
+        the date and content are different, then generate and print today's date. The list is then "supposedly" being
+        kept in an array, that will loop through DOM to populate the dates.</p>
+      <p><strong>Code Challenge on Code War ($6.00 EXP)</strong>: <a
+          href="https://www.codewars.com/kata/541c8630095125aba6000c00/solutions/javascript">digital root</a>, <a
+          href="https://www.codewars.com/kata/577d0a117a3dbd36170001c2/javascript">VaccineNation</a></p>
+      <p><a href="https://www.sitepoint.com/recursion-functional-javascript/">Recursion</a> in JavaScript. It's similar
+        to loops, but calling function within the function itself. Just like loops, you must identify when it ends, or
+        you will get <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Too_much_recursion?utm_source=mozilla&utm_medium=firefox-console-errors&utm_campaign=default">InternalError:
+          too much recursion</a></p>
+      <p><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for...
+            in</a></code> iterate over all enumberable properties object that are keyed by strings. What are <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">enumerable
+          properties</a>? Seems like enumerable properties are properties from Object Literals, and not from prototypes.
+        for...in is built for iterating object properties, not recommended for use with arrays.</p>
+      <p>Syntax: <code>for (variable in object)</code></p>
+    </article>
 
-      <article class="post">
-        <h4 class="level-display">level 3</h4>
-        <h2>
-          <span class="current-exp">$111.00</span>
-          <span class="divider">//</span>
-          <span class="date">January 11, 2020</span>
-        </h2>
-        <p><strong>Code Challenge on Code War ($7.00 EXP)</strong>: House Number Sum, Keep Hyrdrated, NBA Full 48min average, and Find divisible numbers, absent vowel.</p>
-        <p>Provide <code>initialValue</code> to <code>.reduce()</code> method to return provided value when array is empty. Learn more about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">reduce()</a>.</p>
-        <p>Using <code>for..in</code> statement to loop through strings, such as <code>for(let i in vowels)</code>. Do not use <code>for...in</code> for arrays, since <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">index order is important in array.</a></p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 3</h4>
-        <h2>
-          <span class="current-exp">$104.00</span>
-          <span class="divider">//</span>
-          <span class="date">January 10, 2020</span>
-        </h2>
-        <p><strong>Code Challenge on Code War ($6.00 EXP)</strong>: <a
-            href="https://www.codewars.com/kata/545a4c5a61aa4c6916000755/javascript">Find the middle number</a> and <a href="https://www.codewars.com/kata/52f3149496de55aded000410/javascript">Summing a number's digits</a></p>
-        <p>Learned to use <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">Array.prototype.sort()</a></code>. The caveat with <code>.sort()</code> is that it sorts with the first digit, since it converts array elements to strings and compare them in UTF-16 code unit order. For example, <code>.sort()</code> will see 10 as smaller than 5, because 10 starts with 1. In order for <code>.sort()</code> to work properly and truly sorting numbers from small to large, you must write function to let it knows how to compare: <code>.sort((a,b) => a - b)</code>.</p>
-        <p>compareFunction within <code>.sort()</code> seems like simple substraction, but it's running it's own calculation comparing <code>a</code> and <code>b</code>. With <code>a -b</code>, if <code>a</code> is less than <code>b</code>, the function will <code>return -1</code>, thus placing <code>a</code> before <code>b</code>. If <code>a</code> is greater than <code>b</code>, funtion will <code>return 1</code>, and place <code>a</code> after <code>b</code>. If <code>a = b</code>, then function will <code>return 0</code>.</p>
-        <p>To sort array into descending order, use <code>b - a</code>.</p>
-        <p>Also, if you don't want to have <code>.sort()</code> apply to original array, must clone the origin array to another varible with <code>[...array]</code>, instead of <code>newArr = oldArr</code>. Even if you apply <code>.sort()</code> to <code>newArr</code>, <code>oldArr</code> will be sorted as well.</p>
-        <p>Learn
-          <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs">Math.abs()</a></code>
-          to convert negative numbers to positive numbers. And use
-          <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">.reduce()</a></code>
-          to add all numbers within an array.</p>
-        <p><strong>Consuming MDN JavasScript Array <a
-          href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays">tutorial</a> ($0.50
-        EXP).</strong> Array method:</p>
-        <ul>
-          <li>.push() : push elements into end of array.</li>
-          <li>.pop() : pop out elements from end of array.</li>
-          <li>.unshift() : shift array to the left, to add elements in the beginning of array.</li>
-          <li>.shift() : shift array to the right and remove first element from array.</li>
-          <li>.split() : turn strings into array</li>
-          <li>.join() : turn array into string</li>
-          <li>.toString() : turn array into string, with comma as separator</li>
-        </ul>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$120.00</span>
+        <span class="divider">//</span>
+        <span class="dates">January 12, 2020</span>
+      </h2>
+      <p><strong>Code Challenge on Code War ($9.00 EXP)</strong>: <a
+          href="https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9">Shortest word</a>, <a
+          href="https://www.codewars.com/kata/57a049e253ba33ac5e000212">factorial</a>, <a
+          href="https://www.codewars.com/kata/54ba84be607a92aa900000f1">isogram</a>, <a
+          href="https://www.codewars.com/kata/514b92a657cdc65150000006">multiple of 3 or 5</a></p>
+      <p>Learned about <code><a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min">Math.min()</a></code>
+        to return the smallest number. If entering array into the argument, must use <code>...array</code>. There is
+        also <code>Math.max()</code> to find the largest number.</p>
+      <p>Learned using <code><a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set()</a></code>
+        constructor's property <code><a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/size">.size</a></code>
+        to return number of unique elements in a <code>Set</code> object. This is espeically helpful for the isogram
+        challenge.</p>
+    </article>
 
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 3</h4>
-        <h2>
-          <span class="current-exp">$98.00</span>
-          <span class="divider">//</span>
-          <span class="date">January 9, 2020</span>
-        </h2>
-        <p>Code Challenge on Code War ($3.00 EXP): <a href="https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript">String Ends with?</a></p>
-        <p>Learned to insert variables into regex using a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">Regex Constructor.</a></p>
-        <p><code>new RegExp(`${variable}`, 'gi');</code></p>
-        <p>Consuming MDN JavasScript <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">tutorial</a> ($0.50 EXP).</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 3</h4>
-        <h2>
-          <span class="current-exp">$94.50</span>
-          <span class="divider">//</span>
-          <span class="date">January 8, 2020</span>
-        </h2>
-        <p>Consuming Free Code Camp Algorithm ($0.50 EXP): <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/diff-two-arrays">Diff Two Arrays</a></p>
-        <p>Learned using <code><a href="https://devdocs.io/javascript/global_objects/array/filter">.filter()</a></code> and <code><a href="https://devdocs.io/javascript/global_objects/array/includes">.includes()</a></code> to searching through an array and find the differences. Use arrow function within <code>.filter()</code> to create specific search query. <code>.filter()</code> only accepts functions as arugment.</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 3</h4>
-        <h2>
-          <span class="current-exp">$94.00</span>
-          <span class="divider">//</span>
-          <span class="date">January 7, 2020</span>
-        </h2>
-        <p>Code Challenge Dungeon on CodeWar ($3 EXP): completed <a href="https://www.codewars.com/kata/5d50e3914861a500121e1958">Alphabetical Addition</a>.</p>
-        <p>Need to circle back on <code>.reduce()</code> and <code>.map()</code></p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 3</h4>
-        <h2>
-          <span class="current-exp">$91.00</span>
-          <span class="divider">//</span>
-          <span class="date">January 6, 2020</span>
-        </h2>
-        <p>Code Challenge Dungeon on Hacker Rank ($2 EXP) and CodeWar ($5 EXP): Checked out <a href="https://www.hackerrank.com">Hacker Rank</a> and finished <a href="https://www.hackerrank.com/challenges/compare-the-triplets/problem?h_r=profile">Compare the Triplets </a>challenge.</p>
-        <P>I think I will continue using Code War, so I can review how other people write their codes. Hacker Rank coding interface has a lot of cluster and doesn't provide opportunities to view other people's solutions.</P>        
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 3</h4>
-        <h2>
-          <span class="current-exp">$84.00</span>
-          <span class="divider">//</span>
-          <span class="date">January 5, 2020</span>
-        </h2>
-        <p>CodeWar Dungeon, compeleted two 8 kyu katas ($4.00 EXP): <a href="https://www.codewars.com/kata/56598d8076ee7a0759000087">Tips calculator</a> and <a href="https://www.codewars.com/kata/544675c6f971f7399a000e79">Convert String to a Number</a></p>
-        <p>Will need to refactor my Tips Caculator code to best practices.</p>
-        <p>Leveled up! To level 3!</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$80.00</span>
-          <span class="divider">//</span>
-          <span class="date">January 4, 2020</span>
-        </h2>
-        <p>Consuming ($0.50 EXP): Intersection Observer. Intersection Observer <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver">methods</a> and <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">API</a>.</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$79.50</span>
-          <span class="divider">//</span>
-          <span class="date">January 3, 2020</span>
-        </h2>
-        <p>Consuming ($0.50 EXP): well, lazy loading cats didn't work. Will need to troubleshoot and figure what the problem was. Also need to find other examples to see how people do lazy loading.</p>
-        <p>The idea for lazy loading for this website is show the first 10 entries, and lazy load the rest till entry 50. At entry 50, a button to load more will be available, and users have the option to load 50 more entries, until another load more entry shows us.</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$79.00</span>
-          <span class="divider">//</span>
-          <span class="date">January 2, 2020</span>
-        </h2>
-        <p>Consuming ($0.50 EXP): Intersection Observer. Intersection Observer <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver">methods</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">API</a>.</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$78.50</span>
-          <span class="divider">//</span>
-          <span class="date">January 1, 2020</span>
-        </h2>
-        <p>Consuming ($0.50 EXP): NodeList vs Array. NodeList is a browser API, whereas array is for JavaScript. While NodeList is array-like, it doens't have array funciton such as push(), pop(), slice()...etc. And you usually convert NodeList to array if other people are using it, since they will be expeciting an array instead of NodeList.</p>
-        <p>
-          <code>let Array = [].slice.call(document.querySelectorAll('p'));</code><br>
-          <code>let nodeList = document.querySelectorAll('p');</code>
-        </p>
-        <p>Next step: looking to implement <a href="https://dev.to/ekafyi/lazy-loading-images-with-vanilla-javascript-2fbj">lazy loading</a> for the posts.</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$78.00</span>
-          <span class="divider">//</span>
-          <span class="date">December 31, 2019</span>
-        </h2>
-        <p>Creating ($2.50 EXP): Record Raman Numeral Converter into my mini JS website. Created <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/caesars-cipher">Caesars Cipher</a> to decode <a href="https://en.wikipedia.org/wiki/ROT13">ROT13</a> code.</p>
-        <p>I will need to clean up Mini JS stylel to accomodate for multiple mini JavaScript programs. Such as classes for
-          display and ID for interacting with JavaScript.</p>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$111.00</span>
+        <span class="divider">//</span>
+        <span class="date">January 11, 2020</span>
+      </h2>
+      <p><strong>Code Challenge on Code War ($7.00 EXP)</strong>: House Number Sum, Keep Hyrdrated, NBA Full 48min
+        average, and Find divisible numbers, absent vowel.</p>
+      <p>Provide <code>initialValue</code> to <code>.reduce()</code> method to return provided value when array is
+        empty. Learn more about <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">reduce()</a>.
+      </p>
+      <p>Using <code>for..in</code> statement to loop through strings, such as <code>for(let i in vowels)</code>. Do not
+        use <code>for...in</code> for arrays, since <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">index order is
+          important in array.</a></p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$104.00</span>
+        <span class="divider">//</span>
+        <span class="date">January 10, 2020</span>
+      </h2>
+      <p><strong>Code Challenge on Code War ($6.00 EXP)</strong>: <a
+          href="https://www.codewars.com/kata/545a4c5a61aa4c6916000755/javascript">Find the middle number</a> and <a
+          href="https://www.codewars.com/kata/52f3149496de55aded000410/javascript">Summing a number's digits</a></p>
+      <p>Learned to use <code><a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">Array.prototype.sort()</a></code>.
+        The caveat with <code>.sort()</code> is that it sorts with the first digit, since it converts array elements to
+        strings and compare them in UTF-16 code unit order. For example, <code>.sort()</code> will see 10 as smaller
+        than 5, because 10 starts with 1. In order for <code>.sort()</code> to work properly and truly sorting numbers
+        from small to large, you must write function to let it knows how to compare: <code>.sort((a,b) => a - b)</code>.
+      </p>
+      <p>compareFunction within <code>.sort()</code> seems like simple substraction, but it's running it's own
+        calculation comparing <code>a</code> and <code>b</code>. With <code>a -b</code>, if <code>a</code> is less than
+        <code>b</code>, the function will <code>return -1</code>, thus placing <code>a</code> before <code>b</code>. If
+        <code>a</code> is greater than <code>b</code>, funtion will <code>return 1</code>, and place <code>a</code>
+        after <code>b</code>. If <code>a = b</code>, then function will <code>return 0</code>.</p>
+      <p>To sort array into descending order, use <code>b - a</code>.</p>
+      <p>Also, if you don't want to have <code>.sort()</code> apply to original array, must clone the origin array to
+        another varible with <code>[...array]</code>, instead of <code>newArr = oldArr</code>. Even if you apply
+        <code>.sort()</code> to <code>newArr</code>, <code>oldArr</code> will be sorted as well.</p>
+      <p>Learn
+        <code><a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs">Math.abs()</a></code>
+        to convert negative numbers to positive numbers. And use
+        <code><a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">.reduce()</a></code>
+        to add all numbers within an array.</p>
+      <p><strong>Consuming MDN JavasScript Array <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays">tutorial</a> ($0.50
+          EXP).</strong> Array method:</p>
+      <ul>
+        <li>.push() : push elements into end of array.</li>
+        <li>.pop() : pop out elements from end of array.</li>
+        <li>.unshift() : shift array to the left, to add elements in the beginning of array.</li>
+        <li>.shift() : shift array to the right and remove first element from array.</li>
+        <li>.split() : turn strings into array</li>
+        <li>.join() : turn array into string</li>
+        <li>.toString() : turn array into string, with comma as separator</li>
+      </ul>
 
-        <p>Completed one mini JavaScript exercise ($2 EXP): Caesars Cipher. Created regex to identify non-characters. If the input is a character, shift 13 spaces to find the right letter. Somehow the character regex didn't work, and would toggle between <code>true</code> and <code>false</code> even though it's the exact same input... but non-character regex worked, so I had to use double negative.</p>
-        <a href="https://yishuenlo.github.io/mini-js/" class="button">View Website</a>
-        <a href="https://github.com/yishuenlo/yish/blob/gh-pages/quests/js/ROT13.js" class="button">View ROT13 Decoder</a>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$73.50</span>
-          <span class="divider">//</span>
-          <span class="date">December 30, 2019</span>
-        </h2>
-        <p>Creating for two hours ($1.00 EXP) : Write JavaScript function that converts numbers to roman numerals. (mini
-          project $2 EXP)</p>
-        <p>First figure out logic for the roman numerals, and figure out break points for letters. I've decided to create
-          <code>objects</code> and use <code>key</code> <code>value</code> pair for the roman numerals and numbers, because
-          it's easier for me to understand rather than having 2 separapte arrays. However, using <code>object.keys()</code>
-          results in <code>strings</code>, so I converted the <code>string</code> to <code>numbers</code> and store in another
-          array. (uh, does this even make sense then?)</p>
-        <p>Another problem I encountered with using <code>object</code> is that the <code>.keys()</code> and
-          <code>.values()</code> are stored from small to large. So when I need to create my <code>for</code> loops, I need to
-          cycle from the last number, the largest number, back to 0.</p>
-        <a href="https://github.com/yishuenlo/yish/blob/gh-pages/quests/js/convertToRoman.js" class="button">View Code</a>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$70.50</span>
-          <span class="divider">//</span>
-          <span class="date">December 29, 2019</span>
-        </h2>
-        <p>Creating ($0.50 EXP): set all anchor tags with web links to automically open up a new browser tab.</p>
-        <p>Consuming ($0.25 EXP): Researching portfolio examples</p>
-        <p>Websites I love:</p>
-        <ul>
-          <li><a href="https://moments.epic.net/#">Three.js demo site</a></li>
-          <li><a href="https://14islands.com/">14 islands</a></li>
-          <li><a href="https://www.epic.net/en/case-study/illustration-animation/">Epic agency illustrations</a></li>
-        </ul>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$73.50</span>
-          <span class="divider">//</span>
-          <span class="date">December 30, 2019</span>
-        </h2>
-        <p>Creating for two hours ($1.00 EXP) : Write JavaScript function that converts numbers to roman numerals. (mini project $2 EXP)</p>
-        <p>First figure out logic for the roman numerals, and figure out break points for letters. I've decided to create <code>objects</code> and use <code>key</code> <code>value</code> pair for the roman numerals and numbers, because it's easier for me to understand rather than having 2 separapte arrays. However, using <code>object.keys()</code> results in <code>strings</code>, so I converted the <code>string</code> to <code>numbers</code> and store in another array. (uh, does this even make sense then?)</p>
-        <p>Another problem I encountered with using <code>object</code> is that the <code>.keys()</code> and <code>.values()</code> are stored from small to large. So when I need to create my <code>for</code> loops, I need to cycle from the last number, the largest number, back to 0.</p>
-        <a href="https://github.com/yishuenlo/yish/blob/gh-pages/quests/js/convertToRoman.js" class="button">View Code</a>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$70.50</span>
-          <span class="divider">//</span>
-          <span class="date">December 29, 2019</span>
-        </h2>
-        <p>Creating ($0.50 EXP): set all anchor tags with web links to automically open up a new browser tab.</p>
-        <p>Consuming ($0.25 EXP): Researching portfolio examples</p>
-        <p>Websites I love:</p>
-        <ul>
-          <li><a href="https://moments.epic.net/#">Three.js demo site</a></li>
-          <li><a href="https://14islands.com/">14 islands</a></li>
-          <li><a href="https://www.epic.net/en/case-study/illustration-animation/">Epic agency illustrations</a></li>
-        </ul>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$69.75</span>
-          <span class="divider">//</span>
-          <span class="date">December 28, 2019</span>
-        </h2>
-        <p>Creating ($0.50 EXP): Using JavaScript to auto populate hlc navigation links. Using construction document concept:
-          say it once and say it in the right place, and 'DRY' - do not repeat yourself concept, it makes sense to use
-          JavaScript to create the fixed navigation for hlc. Since I will only need to write the code once, in JavaScript, and
-          the navigation menu will appear on all pages. </p>
-        <p>Attemps to automate navigation menu</p>
-        <ul>
-          <li>Tried to create 'string' in JavaScript and inject into HTML. Runs into challenges because I will need to add and
-            remove <code>classes</code> to show current page.</li>
-          <li>Read <code>innerText</code> and auto populate anchor tags. Will need to write anchor tags for the entire list.
-            Need to only write the HTML once in JavaScript instead of copy and pasting into multiplage HTML pages.</li>
-        </ul>
-        <p>Next step: figure out how to create the navigation in JavaScript that will auto populate anchor tag attributes, look for which page is current and set class to current, and only need to write the HTML once in JavaScript.</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$69.25</span>
-          <span class="divider">//</span>
-          <span class="date">December 27, 2019</span>
-        </h2>
-        <p>Consuming ($0.25 EXP): learning Sass.</p>
-        <ul>
-          <li>Data with Sass variables - <code>$variableName</code>. This is already available with current CSS, with
-            <code>--root</code>.</li>
-          <li>nesting CSS with Sass</li>
-          <li><code>@mixin box-shadow($x, $y, $blur, $c)</code> for browser prefixes. Super useful for making sure CSS works
-            in different browsers.</li>
-          <li><code>@if</code> and <code>@else</code> if just like JavaScript. Use with <code>@mixin</code> to have a block of
-            code.</li>
-          <li><code>@for $i from 1 through 12 { .col-#{$i} { width: 100%/12 * $i; }}</code> Useful for creating columns for
-            layout.</li>
-          <li><code>@each $color in blue, red, green { .#{$color}-text {color: $color;}}</code></li>
-        </ul>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$69.00</span>
-          <span class="divider">//</span>
-          <span class="date">December 26, 2019</span>
-        </h2>
-        <p>Creating ($0.50 EXP): update this website. Inject navbar from JavaScript to HTML, so I only need to create the navbar once, and apply to other pages.</p>
-        <p>Problem regarding automating daily log meta data - auto generate levels and date based on the day of recording, and still keep previous records... Think of log as an object with level, date and exp info.</p>
-      </article>
-      <article class="post">
-        <h4 class="level-display">level 2</h4>
-        <h2>
-          <span class="current-exp">$68.50</span>
-          <span class="divider">//</span>
-          <span class="date">December 25, 2019</span>
-        </h2>
-        <p>Consuming ($0.25 EXP): <a href="https://www.digitalocean.com/community/tutorials/understanding-classes-in-JavaScript" >Classes</a> in JavaScript are functions. Classes offer a more concise and clear way of organizing object blueprints.</p>
-        <p>Think of <code>classes</code> as RPG classes, each class has name, level, and <em>class-specific</em> skills.</p>
-        <p>Creating ($0.50 EXP): update this website. Auto populate level table with JavaScript based on level euqaution.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$67.75
-          <span class="divider">//</span>
-          <span class="date">December 24, 2019</span>
-        </h2>
-        <p>Props should act as "pure" function, meaning not change its own input. Such as <code>function sum(a,b) { return a + b};</code></p>
-        <p>So...I've been thinking... React is more complex than I anticipated and I still need to master JavaScript. I am getting more confused by React and will definitely need more time for the new concepts to sink in. And I wonder, the reason I wanted to use React is to create template for html pages, is there a way to do that with Vanilla JavaScript? Maybe I need to look deeper into this option before I confuse myself further with React.</p>
-        <p>I don't think learning React was useless, I did learn something - I need to find solution from what I know already, and sink my teeth into JavaScript first, instead of chasing after something else. </p>
-        <p>I will need to revisit my website and HLC website from JavaScript lens.</p>
-        <p>This <a href="https://wesbos.com/template-strings-html/" >article</a> from Wes Bos explains how to inject HTML using JavaScript.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$67.50
-          <span class="divider">//</span>
-          <span class="date">December 23, 2019</span>
-        </h2>
-        <p><a href="https://reactjs.org/docs/thinking-in-react.html" >Thinking in React </a>- helping me understand why use React and how React is used in real life application.</p>
-        <ol>
-          <li>Break down UI design into components. Each component should only do ONE thing - <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle" >single responsibility principle</a></li>
-          <li>Build static version in React. In this step, use <code>props</code> and not <code>state</code>. "... <code>props</code> are a way of passing data from parent to child. ... <code>State</code> is reserved only for interactivity, that is, data
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$98.00</span>
+        <span class="divider">//</span>
+        <span class="date">January 9, 2020</span>
+      </h2>
+      <p>Code Challenge on Code War ($3.00 EXP): <a
+          href="https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript">String Ends with?</a></p>
+      <p>Learned to insert variables into regex using a <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">Regex
+          Constructor.</a></p>
+      <p><code>new RegExp(`${variable}`, 'gi');</code></p>
+      <p>Consuming MDN JavasScript <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">tutorial</a>
+        ($0.50 EXP).</p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$94.50</span>
+        <span class="divider">//</span>
+        <span class="date">January 8, 2020</span>
+      </h2>
+      <p>Consuming Free Code Camp Algorithm ($0.50 EXP): <a
+          href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/diff-two-arrays">Diff
+          Two Arrays</a></p>
+      <p>Learned using <code><a href="https://devdocs.io/javascript/global_objects/array/filter">.filter()</a></code>
+        and <code><a href="https://devdocs.io/javascript/global_objects/array/includes">.includes()</a></code> to
+        searching through an array and find the differences. Use arrow function within <code>.filter()</code> to create
+        specific search query. <code>.filter()</code> only accepts functions as arugment.</p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$94.00</span>
+        <span class="divider">//</span>
+        <span class="date">January 7, 2020</span>
+      </h2>
+      <p>Code Challenge Dungeon on CodeWar ($3 EXP): completed <a
+          href="https://www.codewars.com/kata/5d50e3914861a500121e1958">Alphabetical Addition</a>.</p>
+      <p>Need to circle back on <code>.reduce()</code> and <code>.map()</code></p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$91.00</span>
+        <span class="divider">//</span>
+        <span class="date">January 6, 2020</span>
+      </h2>
+      <p>Code Challenge Dungeon on Hacker Rank ($2 EXP) and CodeWar ($5 EXP): Checked out <a
+          href="https://www.hackerrank.com">Hacker Rank</a> and finished <a
+          href="https://www.hackerrank.com/challenges/compare-the-triplets/problem?h_r=profile">Compare the Triplets
+        </a>challenge.</p>
+      <P>I think I will continue using Code War, so I can review how other people write their codes. Hacker Rank coding
+        interface has a lot of cluster and doesn't provide opportunities to view other people's solutions.</P>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 3</h4>
+      <h2>
+        <span class="current-exp">$84.00</span>
+        <span class="divider">//</span>
+        <span class="date">January 5, 2020</span>
+      </h2>
+      <p>CodeWar Dungeon, compeleted two 8 kyu katas ($4.00 EXP): <a
+          href="https://www.codewars.com/kata/56598d8076ee7a0759000087">Tips calculator</a> and <a
+          href="https://www.codewars.com/kata/544675c6f971f7399a000e79">Convert String to a Number</a></p>
+      <p>Will need to refactor my Tips Caculator code to best practices.</p>
+      <p>Leveled up! To level 3!</p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$80.00</span>
+        <span class="divider">//</span>
+        <span class="date">January 4, 2020</span>
+      </h2>
+      <p>Consuming ($0.50 EXP): Intersection Observer. Intersection Observer <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver">methods</a> and <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">API</a>.</p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$79.50</span>
+        <span class="divider">//</span>
+        <span class="date">January 3, 2020</span>
+      </h2>
+      <p>Consuming ($0.50 EXP): well, lazy loading cats didn't work. Will need to troubleshoot and figure what the
+        problem was. Also need to find other examples to see how people do lazy loading.</p>
+      <p>The idea for lazy loading for this website is show the first 10 entries, and lazy load the rest till entry 50.
+        At entry 50, a button to load more will be available, and users have the option to load 50 more entries, until
+        another load more entry shows us.</p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$79.00</span>
+        <span class="divider">//</span>
+        <span class="date">January 2, 2020</span>
+      </h2>
+      <p>Consuming ($0.50 EXP): Intersection Observer. Intersection Observer <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver">methods</a> and <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">API</a>.</p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$78.50</span>
+        <span class="divider">//</span>
+        <span class="date">January 1, 2020</span>
+      </h2>
+      <p>Consuming ($0.50 EXP): NodeList vs Array. NodeList is a browser API, whereas array is for JavaScript. While
+        NodeList is array-like, it doens't have array funciton such as push(), pop(), slice()...etc. And you usually
+        convert NodeList to array if other people are using it, since they will be expeciting an array instead of
+        NodeList.</p>
+      <p>
+        <code>let Array = [].slice.call(document.querySelectorAll('p'));</code><br>
+        <code>let nodeList = document.querySelectorAll('p');</code>
+      </p>
+      <p>Next step: looking to implement <a
+          href="https://dev.to/ekafyi/lazy-loading-images-with-vanilla-javascript-2fbj">lazy loading</a> for the posts.
+      </p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$78.00</span>
+        <span class="divider">//</span>
+        <span class="date">December 31, 2019</span>
+      </h2>
+      <p>Creating ($2.50 EXP): Record Raman Numeral Converter into my mini JS website. Created <a
+          href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/caesars-cipher">Caesars
+          Cipher</a> to decode <a href="https://en.wikipedia.org/wiki/ROT13">ROT13</a> code.</p>
+      <p>I will need to clean up Mini JS stylel to accomodate for multiple mini JavaScript programs. Such as classes for
+        display and ID for interacting with JavaScript.</p>
+
+      <p>Completed one mini JavaScript exercise ($2 EXP): Caesars Cipher. Created regex to identify non-characters. If
+        the input is a character, shift 13 spaces to find the right letter. Somehow the character regex didn't work, and
+        would toggle between <code>true</code> and <code>false</code> even though it's the exact same input... but
+        non-character regex worked, so I had to use double negative.</p>
+      <a href="https://yishuenlo.github.io/mini-js/" class="button">View Website</a>
+      <a href="https://github.com/yishuenlo/yish/blob/gh-pages/quests/js/ROT13.js" class="button">View ROT13 Decoder</a>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$73.50</span>
+        <span class="divider">//</span>
+        <span class="date">December 30, 2019</span>
+      </h2>
+      <p>Creating for two hours ($1.00 EXP) : Write JavaScript function that converts numbers to roman numerals. (mini
+        project $2 EXP)</p>
+      <p>First figure out logic for the roman numerals, and figure out break points for letters. I've decided to create
+        <code>objects</code> and use <code>key</code> <code>value</code> pair for the roman numerals and numbers,
+        because
+        it's easier for me to understand rather than having 2 separapte arrays. However, using
+        <code>object.keys()</code>
+        results in <code>strings</code>, so I converted the <code>string</code> to <code>numbers</code> and store in
+        another
+        array. (uh, does this even make sense then?)</p>
+      <p>Another problem I encountered with using <code>object</code> is that the <code>.keys()</code> and
+        <code>.values()</code> are stored from small to large. So when I need to create my <code>for</code> loops, I
+        need to
+        cycle from the last number, the largest number, back to 0.</p>
+      <a href="https://github.com/yishuenlo/yish/blob/gh-pages/quests/js/convertToRoman.js" class="button">View Code</a>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$70.50</span>
+        <span class="divider">//</span>
+        <span class="date">December 29, 2019</span>
+      </h2>
+      <p>Creating ($0.50 EXP): set all anchor tags with web links to automically open up a new browser tab.</p>
+      <p>Consuming ($0.25 EXP): Researching portfolio examples</p>
+      <p>Websites I love:</p>
+      <ul>
+        <li><a href="https://moments.epic.net/#">Three.js demo site</a></li>
+        <li><a href="https://14islands.com/">14 islands</a></li>
+        <li><a href="https://www.epic.net/en/case-study/illustration-animation/">Epic agency illustrations</a></li>
+      </ul>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$73.50</span>
+        <span class="divider">//</span>
+        <span class="date">December 30, 2019</span>
+      </h2>
+      <p>Creating for two hours ($1.00 EXP) : Write JavaScript function that converts numbers to roman numerals. (mini
+        project $2 EXP)</p>
+      <p>First figure out logic for the roman numerals, and figure out break points for letters. I've decided to create
+        <code>objects</code> and use <code>key</code> <code>value</code> pair for the roman numerals and numbers,
+        because it's easier for me to understand rather than having 2 separapte arrays. However, using
+        <code>object.keys()</code> results in <code>strings</code>, so I converted the <code>string</code> to
+        <code>numbers</code> and store in another array. (uh, does this even make sense then?)</p>
+      <p>Another problem I encountered with using <code>object</code> is that the <code>.keys()</code> and
+        <code>.values()</code> are stored from small to large. So when I need to create my <code>for</code> loops, I
+        need to cycle from the last number, the largest number, back to 0.</p>
+      <a href="https://github.com/yishuenlo/yish/blob/gh-pages/quests/js/convertToRoman.js" class="button">View Code</a>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$70.50</span>
+        <span class="divider">//</span>
+        <span class="date">December 29, 2019</span>
+      </h2>
+      <p>Creating ($0.50 EXP): set all anchor tags with web links to automically open up a new browser tab.</p>
+      <p>Consuming ($0.25 EXP): Researching portfolio examples</p>
+      <p>Websites I love:</p>
+      <ul>
+        <li><a href="https://moments.epic.net/#">Three.js demo site</a></li>
+        <li><a href="https://14islands.com/">14 islands</a></li>
+        <li><a href="https://www.epic.net/en/case-study/illustration-animation/">Epic agency illustrations</a></li>
+      </ul>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$69.75</span>
+        <span class="divider">//</span>
+        <span class="date">December 28, 2019</span>
+      </h2>
+      <p>Creating ($0.50 EXP): Using JavaScript to auto populate hlc navigation links. Using construction document
+        concept:
+        say it once and say it in the right place, and 'DRY' - do not repeat yourself concept, it makes sense to use
+        JavaScript to create the fixed navigation for hlc. Since I will only need to write the code once, in JavaScript,
+        and
+        the navigation menu will appear on all pages. </p>
+      <p>Attemps to automate navigation menu</p>
+      <ul>
+        <li>Tried to create 'string' in JavaScript and inject into HTML. Runs into challenges because I will need to add
+          and
+          remove <code>classes</code> to show current page.</li>
+        <li>Read <code>innerText</code> and auto populate anchor tags. Will need to write anchor tags for the entire
+          list.
+          Need to only write the HTML once in JavaScript instead of copy and pasting into multiplage HTML pages.</li>
+      </ul>
+      <p>Next step: figure out how to create the navigation in JavaScript that will auto populate anchor tag attributes,
+        look for which page is current and set class to current, and only need to write the HTML once in JavaScript.</p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$69.25</span>
+        <span class="divider">//</span>
+        <span class="date">December 27, 2019</span>
+      </h2>
+      <p>Consuming ($0.25 EXP): learning Sass.</p>
+      <ul>
+        <li>Data with Sass variables - <code>$variableName</code>. This is already available with current CSS, with
+          <code>--root</code>.</li>
+        <li>nesting CSS with Sass</li>
+        <li><code>@mixin box-shadow($x, $y, $blur, $c)</code> for browser prefixes. Super useful for making sure CSS
+          works
+          in different browsers.</li>
+        <li><code>@if</code> and <code>@else</code> if just like JavaScript. Use with <code>@mixin</code> to have a
+          block of
+          code.</li>
+        <li><code>@for $i from 1 through 12 { .col-#{$i} { width: 100%/12 * $i; }}</code> Useful for creating columns
+          for
+          layout.</li>
+        <li><code>@each $color in blue, red, green { .#{$color}-text {color: $color;}}</code></li>
+      </ul>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$69.00</span>
+        <span class="divider">//</span>
+        <span class="date">December 26, 2019</span>
+      </h2>
+      <p>Creating ($0.50 EXP): update this website. Inject navbar from JavaScript to HTML, so I only need to create the
+        navbar once, and apply to other pages.</p>
+      <p>Problem regarding automating daily log meta data - auto generate levels and date based on the day of recording,
+        and still keep previous records... Think of log as an object with level, date and exp info.</p>
+    </article>
+    <article class="post">
+      <h4 class="level-display">level 2</h4>
+      <h2>
+        <span class="current-exp">$68.50</span>
+        <span class="divider">//</span>
+        <span class="date">December 25, 2019</span>
+      </h2>
+      <p>Consuming ($0.25 EXP): <a
+          href="https://www.digitalocean.com/community/tutorials/understanding-classes-in-JavaScript">Classes</a> in
+        JavaScript are functions. Classes offer a more concise and clear way of organizing object blueprints.</p>
+      <p>Think of <code>classes</code> as RPG classes, each class has name, level, and <em>class-specific</em> skills.
+      </p>
+      <p>Creating ($0.50 EXP): update this website. Auto populate level table with JavaScript based on level euqaution.
+      </p>
+    </article>
+    <article class="post">
+      <h4>level 2</h4>
+      <h2>$67.75
+        <span class="divider">//</span>
+        <span class="date">December 24, 2019</span>
+      </h2>
+      <p>Props should act as "pure" function, meaning not change its own input. Such as <code>function sum(a,b) { return
+          a + b};</code></p>
+      <p>So...I've been thinking... React is more complex than I anticipated and I still need to master JavaScript. I am
+        getting more confused by React and will definitely need more time for the new concepts to sink in. And I wonder,
+        the reason I wanted to use React is to create template for html pages, is there a way to do that with Vanilla
+        JavaScript? Maybe I need to look deeper into this option before I confuse myself further with React.</p>
+      <p>I don't think learning React was useless, I did learn something - I need to find solution from what I know
+        already, and sink my teeth into JavaScript first, instead of chasing after something else. </p>
+      <p>I will need to revisit my website and HLC website from JavaScript lens.</p>
+      <p>This <a href="https://wesbos.com/template-strings-html/">article</a> from Wes Bos explains how to inject HTML
+        using JavaScript.</p>
+    </article>
+    <article class="post">
+      <h4>level 2</h4>
+      <h2>$67.50
+        <span class="divider">//</span>
+        <span class="date">December 23, 2019</span>
+      </h2>
+      <p><a href="https://reactjs.org/docs/thinking-in-react.html">Thinking in React </a>- helping me understand why use
+        React and how React is used in real life application.</p>
+      <ol>
+        <li>Break down UI design into components. Each component should only do ONE thing - <a
+            href="https://en.wikipedia.org/wiki/Single_responsibility_principle">single responsibility principle</a>
+        </li>
+        <li>Build static version in React. In this step, use <code>props</code> and not <code>state</code>. "...
+          <code>props</code> are a way of passing data from parent to child. ... <code>State</code> is reserved only for
+          interactivity, that is, data
           that changes over time." - React Guide</li>
-          <li>Add "DRY" Minimal state. To determine whether it is a state, ask:
-            <ul>
-              <li>Is it passed in from a parent via props? If so, it probably isn’t state.</li>
-              <li>Does it remain unchanged over time? If so, it probably isn’t state.</li>
-              <li>Can you compute it based on any other state or props in your component? If so, it isn’t state. - remember DRY</li>
-            </ul>
-          </li>
-          <li>Identity where the state should live. 
-            <ul>
-              <li>Identify every component that renders something based on that state.</li>
-              <li>Find a common owner component (a single component above all the components that need the state in the hierarchy).</li>
-              <li>Either the common owner or another component higher up in the hierarchy should own the state.</li>
-              <li>If you can’t find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.</li>
-            </ul>
-          </li>
-        </ol>
-        <p>I need to read this <a href="https://reactjs.org/docs/components-and-props.html" >documentation</a> more and have a better grasp of React state, props, and components to continue Codecademy's lesson.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$67.25
-          <span class="divider">//</span>
-          <span class="date">December 22, 2019</span>
-        </h2>
-        <p>A React component should use <code>props</code> to store information that can be changed, but can only be changed by a <em>different</em> component.</p>
-        <p>A React component should use <code>state</code> to store information that the component <em>itself</em> can change.</p>
-        <p>...what are some examples of React? <strong>why</strong> do we use state and props?</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$67.00
-          <span class="divider">//</span>
-          <span class="date">December 21, 2019</span>
-        </h2>
-        <p>Anytime <code>this.setState()</code> is called, it automatically calls <code>.render()</code> as soon as the state has changed. This is why we cannot call <code>this.setState()</code> inside <code>.render()</code>, because it would create an infinite loop.</p>
-        <p><strong>Quest completed</strong>: Codecademy React Part I! $5 EXP rewarded!</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$61.75
-          <span class="divider">//</span>
-          <span class="date">December 20, 2019</span>
-        </h2>
-        <p>What is <code>promise()</code> in JavaScript? A <code>promise</code> allows JavaScript to run asynchronously. JavaScript typically runs in a singular thread and execute code in order. <code>Promise</code> allows JavaScript to check for conditions and decide which function to execute - whether is the <code>promise</code> is <code>resolved</code> or <code>rejected</code>.</p>
-        <h3>Example codes:</h3>
-        <p>img1.callThisIfLoadedOrWhenLoaded(function() { <br>
+        <li>Add "DRY" Minimal state. To determine whether it is a state, ask:
+          <ul>
+            <li>Is it passed in from a parent via props? If so, it probably isn’t state.</li>
+            <li>Does it remain unchanged over time? If so, it probably isn’t state.</li>
+            <li>Can you compute it based on any other state or props in your component? If so, it isn’t state. -
+              remember DRY</li>
+          </ul>
+        </li>
+        <li>Identity where the state should live.
+          <ul>
+            <li>Identify every component that renders something based on that state.</li>
+            <li>Find a common owner component (a single component above all the components that need the state in the
+              hierarchy).</li>
+            <li>Either the common owner or another component higher up in the hierarchy should own the state.</li>
+            <li>If you can’t find a component where it makes sense to own the state, create a new component solely for
+              holding the state and add it somewhere in the hierarchy above the common owner component.</li>
+          </ul>
+        </li>
+      </ol>
+      <p>I need to read this <a href="https://reactjs.org/docs/components-and-props.html">documentation</a> more and
+        have a better grasp of React state, props, and components to continue Codecademy's lesson.</p>
+    </article>
+    <article class="post">
+      <h4>level 2</h4>
+      <h2>$67.25
+        <span class="divider">//</span>
+        <span class="date">December 22, 2019</span>
+      </h2>
+      <p>A React component should use <code>props</code> to store information that can be changed, but can only be
+        changed by a <em>different</em> component.</p>
+      <p>A React component should use <code>state</code> to store information that the component <em>itself</em> can
+        change.</p>
+      <p>...what are some examples of React? <strong>why</strong> do we use state and props?</p>
+    </article>
+    <article class="post">
+      <h4>level 2</h4>
+      <h2>$67.00
+        <span class="divider">//</span>
+        <span class="date">December 21, 2019</span>
+      </h2>
+      <p>Anytime <code>this.setState()</code> is called, it automatically calls <code>.render()</code> as soon as the
+        state has changed. This is why we cannot call <code>this.setState()</code> inside <code>.render()</code>,
+        because it would create an infinite loop.</p>
+      <p><strong>Quest completed</strong>: Codecademy React Part I! $5 EXP rewarded!</p>
+    </article>
+    <article class="post">
+      <h4>level 2</h4>
+      <h2>$61.75
+        <span class="divider">//</span>
+        <span class="date">December 20, 2019</span>
+      </h2>
+      <p>What is <code>promise()</code> in JavaScript? A <code>promise</code> allows JavaScript to run asynchronously.
+        JavaScript typically runs in a singular thread and execute code in order. <code>Promise</code> allows JavaScript
+        to check for conditions and decide which function to execute - whether is the <code>promise</code> is
+        <code>resolved</code> or <code>rejected</code>.</p>
+      <h3>Example codes:</h3>
+      <p>img1.callThisIfLoadedOrWhenLoaded(function() { <br>
         // loaded<br>
         }).orIfFailedCallThis(function() {<br>
         // failed<br>
@@ -435,780 +598,989 @@
         // one or more failed
         });</p>
 
-        <p><strong>How <code>promise</code> could be use:</strong></p>
-        <p>
-          img1.ready().then(function() {<br>
-          // loaded<br>
-          }, function() {<br>
-          // failed<br>
-          });<br>
-          <br>
-          // and…<br>
-          Promise.all([img1.ready(), img2.ready()]).then(function() {<br>
-          // all loaded<br>
-          }, function() {<br>
-          // one or more failed<br>
-          });
+      <p><strong>How <code>promise</code> could be use:</strong></p>
+      <p>
+        img1.ready().then(function() {<br>
+        // loaded<br>
+        }, function() {<br>
+        // failed<br>
+        });<br>
+        <br>
+        // and…<br>
+        Promise.all([img1.ready(), img2.ready()]).then(function() {<br>
+        // all loaded<br>
+        }, function() {<br>
+        // one or more failed<br>
+        });
 
-        </p>
-      </article>
-      <article class="post">
+      </p>
+    </article>
+    <article class="post">
       <article class="post">
         <h4>level 2</h4>
         <h2>$61.50
           <span class="divider">//</span>
           <span class="date">December 18, 2019</span>
         </h2>
-        <p>Binding <code>this</code> to JSX callbacks. Generally, if you refer to a method without <code>()</code> after it, such as <code>onClick={this.handleClick}</code>, you should bind that method: <code>this.handleClick = this.handleClick.bind(this);</code> - <a href="https://reactjs.org/docs/handling-events.html" >React Doc</a></p>
+        <p>Binding <code>this</code> to JSX callbacks. Generally, if you refer to a method without <code>()</code> after
+          it, such as <code>onClick={this.handleClick}</code>, you should bind that method: <code>this.handleClick =
+            this.handleClick.bind(this);</code> - <a href="https://reactjs.org/docs/handling-events.html">React Doc</a>
+        </p>
       </article>
       <article class="post">
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$61.25
-          <span class="divider">//</span>
-          <span class="date">December 17, 2019</span>
-        </h2>
-        <p>To use <code>state</code> and <code>constructor</code> in React properly, must call <code>super(props)</code> to use <code>this</code> in a <code>constructor</code>.</p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS" >Object Oriented JavaScript</a></p>
-        <p><a href="https://css-tricks.com/what-is-super-in-JavaScript/" >What is super() in JS?</a></p>
-        <p>What is the difference between <code>state</code> and <code>props</code>? My current understanding: <code>state</code> is used to show interactive state of React components, and <code>props</code>, stands for properties, is used to change the content of components.</p>
-        <p>P.S. started the new EXP system and introduced $0.5 and $0.25 hourly rates for creating and consuming respectively. I wonder if this would deter me from learning...? Well, the idea is to stop me from constantly looking at tutorials and not actually doing the work myself. It's like watching basketball tutorials without ever touching a basketball.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$61
-          <span class="divider">//</span>
-          <span class="date">December 16, 2019</span>
-        </h2>
-        <p><code>Import</code> and <code>export</code> for React components are essential part of writing and organizing React codes. Must stay organized on how components are interacting with each other.</p>
-        <p><code>this.props</code> is essential in passing information between React components.</p>
-        <p>Every component's <code>pros</code> object has a proprty name <code>children</code>. <code>this.props.children</code> will return everything in-between a component's opening and closing JSX tags. This is a good way to insert content when content varies by component's instances.</p>
-        <p>Use <code>getDefaultProps</code> property to display default message when property value is missing.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$60
-          <span class="divider">//</span>
-          <span class="date">December 15, 2019</span>
-        </h2>
-        <p>Naming convention for event handlers:</p>
-        <ul>
-          <li>handleClick: a function that runs when being called.</li>
-          <li>onClick: a listener that listens for action from users.</li>
-        </ul>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$59
-          <span class="divider">//</span>
-          <span class="date">December 14, 2019</span>
-        </h2>
-        <p>Continue on Codecademy React I. The most common use of <code>props</code> is to pass information to a component, from a different component. I will need to draw out a diagram to understand how <code>props</code> get passed between components, and how components <code>export</code> and <code>import</code>.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$58
-          <span class="divider">//</span>
-          <span class="date">December 13, 2019</span>
-        </h2>
-        <p>Learn more about <code>this</code> in <a href="https://dmitripavlutin.com/gentle-explanation-of-this-in-JavaScript/" >JavaScript</a>.</p>
-        <p><code>Getter</code> in JavaScript. Why use <code>getter</code>? <code>Getters</code> give you a way to define a property of an object, but they do not calculate the property's value until it is
-        accessed. A <code>getter</code> defers the cost of calculating the value until the value is needed, and if it is never needed, you
-        never pay the cost.</p>
-        <p>The value is calculated the first time the <code>getter</code> is called and is then cached so subsequent accesses return the cached
-        value without recalculating it. This is useful in the following situations:
-        <ul>
-          <li>If the calculation of a property value is expensive (takes much RAM or CPU time, spawns worker thread, retrieves remote file, etc).</li>
-          <li>If the value isn't needed just now. It will be used later, or in some case it's not used at all.</li>
-          <li>If it's used, it will be accessed several times, and there is no need to re-calculate that value will never be changed
-          or shouldn't be re-calculated.This means that you shouldn't use a lazy getter for a property whose value you expect to change, because the getter will
-          not recalculate the value.</li>
-        </ul>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get" >-Mozilla MDN</a></p>
-      </article>
-      <article class="post">
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$57
-          <span class="divider">//</span>
-          <span class="date">December 12, 2019</span>
-        </h2>
-        <p>Continue on Codecademy. You can place logic in render function, but it must be within <code>render()</code> and before <code>return</code>.</p>
-        <p>Only way to have <code>if</code> statement inside React render function is before <code>return</code> statement. - I thought you can't have conditional statements in React?! Need to circle back to clarify.</p>
-        <p><a href="https://discuss.codecademy.com/t/can-i-change-a-components-attribute-values-using-a-conditional-statement-in-the-render-function/407325" >Example code</a> to change component's attribute value using conditional statement.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$56
-          <span class="divider">//</span>
-          <span class="date">December 11, 2019</span>
-        </h2>
-        <h3>Lesson Learned with HLC Plan Overview</h3>
-        <ul>
-          <li>It's a documentation project, it will get repetitive and boring.</li>
-            <ul>
-              <li>Solution: find ways to automate the process</li>
-            </ul>
-          <li>Raster images look old school in current website trend. Will need to develop vector images to make website more modern and sleek.</li>
-            <ul>
-              <li>Solution: develop vector graphics during project process. Keep <em>webify</em> project in mind.</li>
-            </ul>
-        </ul>
-        <h3>Why webify documents?</h3>
-        <ul>
-          <li>User friendly navigation</li>
-          <li>Manageable file sizes</li>
-          <li>Faster load time</li>
-          <li>Portable and shareable</li>
-        </ul>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$55
-          <span class="divider">//</span>
-          <span class="date">December 9, 2019</span>
-        </h2>
-        <p>Continue with Codecademy React Part I. </p>
-        <code>
-          class TuxedoCat extends React.Component{
-            render(){
-              return(
-                //some code here
-              );
-            }
-          };
-        </code>
-      </article>
-
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$54
-          <span class="divider">//</span>
-          <span class="date">December 8, 2019</span>
-        </h2>
-        <h3>React Components</h3>
-        <p>JavaScript classes are special functions, classes have expressions and declarations just like functions. Difference between JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" >class</a> and function is the order of declaring classes matter, but it doesn't matter for functions. Otherwise known as <a href="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting" >hoisting</a>.</p>
-        <p><a href="https://hacks.mozilla.org/2015/07/es6-in-depth-classes/" >Why have classes</a>? A cleaner way to have object-oriented design in JavaScipt. More on <a href="https://hacks.mozilla.org/2015/08/es6-in-depth-subclassing/" >subclassing</a>.</p>
-        <p>Subclassing <code>React.Component</code> is the way to declare a new component class. Component class variable names must begin with capital letters! class names are written in UpperCamelCase. In a JSX element, that capitalized first letter says, “I will be a component instance and not an HTML tag.”</p>
-        <p>React components must have a render method, <code>render() {}</code>, and value is a function. A render method must contain a <code>return</code> statement. Usually, this <code>return</code> statement returns a JSX expression.</p>
-      </article>
-
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$53
-          <span class="divider">//</span>
-          <span class="date">December 7, 2019</span>
-        </h2>
-        <p>React can work without JSX. Each JSX is secretly a call to <code>React.createElement(component, props, ...children)</code>, and that's how compilers translate JSX to JavaScript.</p>
-        <p>It is possible to create shorthand for React.createElement if we get tired of typing it all the time:</p>
-        <code>
-          const e = React.createElement; <br/>
-          ReactDOM.render( <br/>
-          e('div, null, 'Hello World'), document.getElementById('root')
-          <br/>
-          );
-        </code>
-
-        <p>The same can be done with <code>document.getElementById</code>...</p>
-
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$52
-          <span class="divider">//</span>
-          <span class="date">December 6, 2019</span>
-        </h2>
-        <p>Use <code>.map()</code> to work with arrays and lists in JSX. Learn more about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" >.map()</a></p>
-        <p><code>Key</code> in JSX is like an id, but it doesn't get rendered. <code>Key</code> is useful internally by React to keep track of lists. Use <code>keys</code> when:</p>
-        <ul>
-          <li>The list-items have memory from one render to the next. For instance, when a to-do list renders, each item must
-          “remember” whether it was checked off. The items shouldn’t get amnesia when they render.</li>
-          <li>A list’s order might be shuffled. For instance, a list of search results might be shuffled from one render to the next.</li>
-        </ul>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$51
-          <span class="divider">//</span>
-          <span class="date">December 4, 2019</span>
-        </h2>
-        <p>Update gencats to use image search instead.</p>
-        <p>P.S. I'm brain dead and just need more cat photos in life.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$50
-          <span class="divider">//</span>
-          <span class="date">December 3, 2019</span>
-        </h2>
-        <p>Update gencats to have 34 kitties search.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$49
-          <span class="divider">//</span>
-          <span class="date">December 2, 2019</span>
-        </h2>
-        <p>Learning using <code>if</code> statemetns in React in Codecademy. <code>If</code> statement will not work inside JSX, but will work as regular JavaScript. Alternative workaround is to have JSX inside <code>if</code> statements.</p>
-        <p><a href="https://discuss.codecademy.com/t/when-should-i-use-an-if-statement-a-ternary-operator-or-the-operator/404789" >When to use</a> <code>Ternary</code>, <code>&&</code> and <code>if</code> statement: Choose the more concise version.</p>
-        <ul>
-          <li>the <code>&&</code> and <code>ternary</code> operators are more concise, choose either of these when possible</li>
-          <li>choose the <code>&&</code> over a <code>ternary</code> when you want an action to occur (or not) based on a single
-            condition. Example: if...then...</li>
-          <li>Use <code>ternary</code> for if...else... that returns a value. Example: if kitty, else puppy.</li>
-          <li>choose an <code>if</code>/<code>else</code>/<code>else if</code> statement when you need to extrapolate logic to make it easier to read and understand</li>
-        </ul>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$48
-          <span class="divider">//</span>
-          <span class="date">December 1, 2019</span>
-        </h2>
-        <p>The auto search script worked! Figured out how to automatically opening and closing search links. The issue with tabs opening at the same was solved by spacing timeouts for each subsequent searches. <a href="https://github.com/yishuenlo/gencats/blob/gh-pages/script.js" >view script</a>.</p>
-        <p>Tips on solving coding problems in the future: try to solve the problem the "dumb" way first. I tried to solve the problem with DRY method before I've figured out the solution, thus adding extra complications and confused myself - I felt like I was thinking in circles. And keyword is "thinking". I tried to solve the problem in my head, instead of just writing out the codes step by step.</p>
-        <p>Once I wrote the script step by step and did it the "dumb" way, I immediately figured out what the problem was. And then I can further refine the script by making it DRY.</p>
-        <a href="https://yishuenlo.github.io/gencats/" class="button" >View Demo</a>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$47
-          <span class="divider">//</span>
-          <span class="date">November 30, 2019</span>
-        </h2>
-        <p>Write JavaScript program to automate opening and closing tabs. The intent is to open a new link tab, and automatically close the tab. And repeat through an array of links.</p>
-        <p>I've figured out opening one link and automiatically closing after 2 seconds. However, I cannot figure out how to loop this behavior through an array. The speed of opening is faster than closing, so I ended up opening a bunch new tabs and only closing one tab.</p>
-        <p>I will need to figure out how to call a function ONLY after the previous function is complete.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$46
-          <span class="divider">//</span>
-          <span class="date">November 29, 2019</span>
-        </h2>
-        <p>Continue learning React on <a href="https://www.codecademy.com/learn/react-101" >Codecademy</a>.</p>
-        <h3>Main takeaways:</h3>
-        <ul>
-          <li>JSX is not JavaScript nor HTML. Its syntax is like HTML, but it's an extension of JavaScript. And you write JSX in JavaScript file.</li>
-          <li>You need "translator" to compile and translate JSX into JavaScript. (Something like Babel? I needed to install Node for React to work... need to learn this later.)</li>
-          <li><code>React</code> and <code>ReactDOM</code> are different. <code>React</code> is a JS library for buildig UI, <code>ReactDOM</code> is the JS library for React to interacte with DOM. You need to import both into JavaScript file for React to work properly.</li>
-          <li>React uses Virtual DOM to reduce re-rendering DOM from scratch everytime something is updated. Virtual DOM is lightweight, so React compares current version of Virtual DOM from previous version to figure what changed, and only update the content that changed from previous version.</li>
-          <li><strong>Analogy for Virtual DOM = Home Improvements</strong>: update and compare CAD/Sketchup plans, and remodel specific rooms that changed instead of rebuilding the whole house from scratch every time you want to do home improvements.</li>
-          <li>Call JavaScript within JSX with <code>{ }</code>.</li>
-        </ul>
-        <br/>
-        <h3>Resources for <a href="https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html" >using Git on the Command Line.</a></h3>
-        <ul>
-          <li>Check out branches: <code>git checkout (name-of-branch)</code></li>
-          <li>View changes: <code>git status</code></li>
-          <li>Add local changes: <code>git add (file-name)</code></li>
-          <li>Add ALL local changes: <code>git add .</code></li>
-          <li>Commit local changes: <code>git commit -m "comment description"</code></li>
-          <li>Push all local commits: <code>git push origin (name-of-branch)</code></li>
-          <li>merge branches: <code>git merge master</code></li>
-        </ul>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$45
-          <span class="divider">//</span>
-          <span class="date">November 28, 2019</span>
-        </h2>
-        <p>Learning React on <a href="https://www.codecademy.com/learn/react-101" >Codecademy</a>. The React Tic-Tac-Toe tutorial was getting too confusing and I needed to start from scratch to understand every single details about React, rather than just jumping in to build an app without proper understanding of JSX, ReactDOM and <a href="https://www.codecademy.com/articles/react-virtual-dom" >Virtual DOM</a>.</p>
-        <p>React on Codecademy</p>
-        <ul>
-          <li><a href="https://www.codecademy.com/learn/react-101" >React Part I</a></li>
-          <li><a href="https://www.codecademy.com/learn/react-102" >React Part II</a></li>
-        </ul>
-        <br>
-        <p>P.S. I'm also testing out VS Code to see how I like it, since Gatsby and Design.Code both used VS Code for React. I think I like an intergrated terminal in the code editor... but I don't know how to use the terminal to commit to my github yet. Once I figured this out, it'll make my life easier and just keep all of my coding activities within one app window.</p>
-        <p>P.P.S Since this code log is so repetitive and componenet-heavy, it'll be good to convert this website into React Components.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$44
-          <span class="divider">//</span>
-          <span class="date">November 27, 2019</span>
-        </h2>
-        <p>Go through React tutorial, Completing the Game, and getting confused. Main takeaway, have parent component change the state of the children components by passing props. Do not have parent asking for the children's state.</p>
-        <p>"To collect data from multiple children, or to have two child components communicate with each other, you need to declare the shared state in their parent component instead. The parent component can pass the state back down to the children by using props; this keeps the child components in sync with each other and with the parent component." - <a href="https://reactjs.org/tutorial/tutorial.html#completing-the-game" >React</a></p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$43
-          <span class="divider">//</span>
-          <span class="date">November 26, 2019</span>
-        </h2>
-        <p>Set up React <a href="https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment" >local development</a>. Start tic-tac-toe game with React <a href="https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial" >tutorial</a>.</p>
-        <p>Learning resources: <a href="https://reactfordesigners.com/" >React for Designers</a></p>
+        <article class="post">
+          <h4>level 2</h4>
+          <h2>$61.25
+            <span class="divider">//</span>
+            <span class="date">December 17, 2019</span>
+          </h2>
+          <p>To use <code>state</code> and <code>constructor</code> in React properly, must call
+            <code>super(props)</code> to use <code>this</code> in a <code>constructor</code>.</p>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS">Object
+              Oriented JavaScript</a></p>
+          <p><a href="https://css-tricks.com/what-is-super-in-JavaScript/">What is super() in JS?</a></p>
+          <p>What is the difference between <code>state</code> and <code>props</code>? My current understanding:
+            <code>state</code> is used to show interactive state of React components, and <code>props</code>, stands for
+            properties, is used to change the content of components.</p>
+          <p>P.S. started the new EXP system and introduced $0.5 and $0.25 hourly rates for creating and consuming
+            respectively. I wonder if this would deter me from learning...? Well, the idea is to stop me from constantly
+            looking at tutorials and not actually doing the work myself. It's like watching basketball tutorials without
+            ever touching a basketball.</p>
+        </article>
+        <article class="post">
+          <h4>level 2</h4>
+          <h2>$61
+            <span class="divider">//</span>
+            <span class="date">December 16, 2019</span>
+          </h2>
+          <p><code>Import</code> and <code>export</code> for React components are essential part of writing and
+            organizing React codes. Must stay organized on how components are interacting with each other.</p>
+          <p><code>this.props</code> is essential in passing information between React components.</p>
+          <p>Every component's <code>pros</code> object has a proprty name <code>children</code>.
+            <code>this.props.children</code> will return everything in-between a component's opening and closing JSX
+            tags. This is a good way to insert content when content varies by component's instances.</p>
+          <p>Use <code>getDefaultProps</code> property to display default message when property value is missing.</p>
+        </article>
+        <article class="post">
+          <h4>level 2</h4>
+          <h2>$60
+            <span class="divider">//</span>
+            <span class="date">December 15, 2019</span>
+          </h2>
+          <p>Naming convention for event handlers:</p>
           <ul>
-            <li><a href="https://www.codecademy.com/learn/react-101" >Codecademy</a></li>
-            <li><a href="https://egghead.io/courses/the-beginner-s-guide-to-react" >Egghead</a></li>
+            <li>handleClick: a function that runs when being called.</li>
+            <li>onClick: a listener that listens for action from users.</li>
           </ul>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$42
-          <span class="divider">//</span>
-          <span class="date">November 25, 2019</span>
-        </h2>
-        <p>After spending sometime putting together the pages for HLC Plan Overview manually - literally putting in the html for every single page. I wonder if there are ways to automate it with templates. After some research, I came across static website, static website generator, and <a href="https://jamstack.org/" >JAM</a> (JavaScript, API and Markup)</p>
-        <p>JAM allows developers to focus on front-end development and not having to worry about server coding. And it's lightweight so I don't have to get bogged down by CMSs like Wordpress. Which is exactly what I need. </p>
-        <p>I browsed <a href="https://www.staticgen.com/" >StaticGen</a> for options. Since I'd like to continue using JavaScript and not learn any new languages to develop templates and automate my website pages, I've decided on learning and using <a href="https://www.gatsbyjs.org/" >Gatsby</a>.</p>
-        <p>Gatsby uses React for its template, so I'll be learning <a href="https://reactjs.org/tutorial/tutorial.html" >React</a> so I can be proficient enough to play with and customize Gatsby starters templates. I can't wait to start JAMing soon!</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$41
-          <span class="divider">//</span>
-          <span class="date">November 24, 2019</span>
-        </h2>
-        <p>What is command line and why should I use it?</p>
-        <p><strong>What is the Command Line?</strong> Command Line a simple, basic way to communicate with our computers. Our computers have evolved to use Graphic User Interface for users to communicate with computers - such as Window Explorers. GUI is intuitive and visual, and requires mostly mouse clicks. On the other hand, Command Line only uses keyboard and text.</p>
-        <p><strong>Why should I use the Command Line?</strong> Command Line offers more ways to communicate with my computer through one channel, versus jumping through different locations and window explorers. For example, Git uses command line. What it does is that the Command Line has ALL control of Git, whereas if I use a GUI version, I'd have to install Github and uses Github's app to access different versions of Git. While Github is more intuitive, it doens't offer more power and control.</p>
-        <p>One example of how Github doesn't have more control is when I had to use different Github users. Switching through Github is hard and confusing... and almost seems impossible. Just becasue I logged out of Github doesn't mean my computer is unlinked from my previous Git source. So while my Github is saying I've logged out of <code>loys73</code> and is now using <code>yishuenlo</code>, my computer's Git is still linked to <code>loys73</code>.</p>
-        <p>Apparently using command line is also easier to many batches of files, such as changing file names just for .txt file. In summary, Command Line is the most rudimentary way to communicate with computers, but also the easier way to control and let communters understand what we need from them. Almost like comparing 文言文 and 白話文.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$40
-          <span class="divider">//</span>
-          <span class="date">November 23, 2019</span>
-        </h2>
-        <p>Free Code Camp JavaScript exercise: <a href="https://www.freecodecamp.org/learn/JavaScript-algorithms-and-data-structures/basic-JavaScript/replace-loops-using-recursion" >replace loops using recursion</a>. Write a function that will continually add to itself, until it reaches 0. For example, 5+4+3+2+1.</p>
-        <p>I don't think I've understand the concept enough to explain why... and I don't understand why I must learn it - how is it relevant to building pratical websites, if I don't want to do fractal math?</p>
-        <p><a href="https://www.sitepoint.com/recursion-functional-JavaScript/" >This website</a> I found helped explain what is recursion... that supplement Free Code Camp.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$39
-          <span class="divider">//</span>
-          <span class="date">November 21, 2019</span>
-        </h2>
-        <p>Review static sites. Read <a href="https://www.gatsbyjs.org/docs/" >Gatsby.js documentation</a> and <a href="https://www.gatsbyjs.org/tutorial/" >tutorials</a> on how to set up static site with Gatsby. Will need to learn React.js to customize the starter pages.</p>
-        <p>The goal is to transfer this simple site to Gatsby. Which would require me learning React.js...</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$38
-          <span class="divider">//</span>
-          <span class="date">November 17, 2019</span>
-        </h2>
-        <p>Mocking up / styling HLC plan overview content pages.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$37
-          <span class="divider">//</span>
-          <span class="date">November 16, 2019</span>
-        </h2>
-        <p>Added JavaScript and toggle interaction works. However, due to different z-index for header navbar and hamburger menu, they create another issue. The expanded hamburger menu should cover up everything, including the header, but hamburger icon is inside the header. Therefoe, it's either the whole menu covers everything up, including the hamburger icon. Or hamburger icon is showing, but header is also on top of expanded menu.</p>
-        <p>Potential solution:</p>
-        <ol>
-          <li>Move hamburger icon out of <code>header</code>, and into <code>nav</code>.</li>
-          <li>Hide rest of the items in header, except hamburger icon</li>
-        </ol>
-        <p>Decided to go with option 2 and hide header when clicking on hamburger icon. So the changes are just within CSS and JavaScript, and no need to shuffle the structure in HTML.</p>
-        <p>Next step: add navigation at the footer.</p>
-      </article>
+        </article>
+        <article class="post">
+          <h4>level 2</h4>
+          <h2>$59
+            <span class="divider">//</span>
+            <span class="date">December 14, 2019</span>
+          </h2>
+          <p>Continue on Codecademy React I. The most common use of <code>props</code> is to pass information to a
+            component, from a different component. I will need to draw out a diagram to understand how
+            <code>props</code> get passed between components, and how components <code>export</code> and
+            <code>import</code>.</p>
+        </article>
+        <article class="post">
+          <h4>level 2</h4>
+          <h2>$58
+            <span class="divider">//</span>
+            <span class="date">December 13, 2019</span>
+          </h2>
+          <p>Learn more about <code>this</code> in <a
+              href="https://dmitripavlutin.com/gentle-explanation-of-this-in-JavaScript/">JavaScript</a>.</p>
+          <p><code>Getter</code> in JavaScript. Why use <code>getter</code>? <code>Getters</code> give you a way to
+            define a property of an object, but they do not calculate the property's value until it is
+            accessed. A <code>getter</code> defers the cost of calculating the value until the value is needed, and if
+            it is never needed, you
+            never pay the cost.</p>
+          <p>The value is calculated the first time the <code>getter</code> is called and is then cached so subsequent
+            accesses return the cached
+            value without recalculating it. This is useful in the following situations:
+            <ul>
+              <li>If the calculation of a property value is expensive (takes much RAM or CPU time, spawns worker thread,
+                retrieves remote file, etc).</li>
+              <li>If the value isn't needed just now. It will be used later, or in some case it's not used at all.</li>
+              <li>If it's used, it will be accessed several times, and there is no need to re-calculate that value will
+                never be changed
+                or shouldn't be re-calculated.This means that you shouldn't use a lazy getter for a property whose value
+                you expect to change, because the getter will
+                not recalculate the value.</li>
+            </ul>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get">-Mozilla
+                MDN</a></p>
+        </article>
+        <article class="post">
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$57
+              <span class="divider">//</span>
+              <span class="date">December 12, 2019</span>
+            </h2>
+            <p>Continue on Codecademy. You can place logic in render function, but it must be within
+              <code>render()</code> and before <code>return</code>.</p>
+            <p>Only way to have <code>if</code> statement inside React render function is before <code>return</code>
+              statement. - I thought you can't have conditional statements in React?! Need to circle back to clarify.
+            </p>
+            <p><a
+                href="https://discuss.codecademy.com/t/can-i-change-a-components-attribute-values-using-a-conditional-statement-in-the-render-function/407325">Example
+                code</a> to change component's attribute value using conditional statement.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$56
+              <span class="divider">//</span>
+              <span class="date">December 11, 2019</span>
+            </h2>
+            <h3>Lesson Learned with HLC Plan Overview</h3>
+            <ul>
+              <li>It's a documentation project, it will get repetitive and boring.</li>
+              <ul>
+                <li>Solution: find ways to automate the process</li>
+              </ul>
+              <li>Raster images look old school in current website trend. Will need to develop vector images to make
+                website more modern and sleek.</li>
+              <ul>
+                <li>Solution: develop vector graphics during project process. Keep <em>webify</em> project in mind.</li>
+              </ul>
+            </ul>
+            <h3>Why webify documents?</h3>
+            <ul>
+              <li>User friendly navigation</li>
+              <li>Manageable file sizes</li>
+              <li>Faster load time</li>
+              <li>Portable and shareable</li>
+            </ul>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$55
+              <span class="divider">//</span>
+              <span class="date">December 9, 2019</span>
+            </h2>
+            <p>Continue with Codecademy React Part I. </p>
+            <code>
+              class TuxedoCat extends React.Component{
+              render(){
+              return(
+              //some code here
+              );
+              }
+              };
+            </code>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$36
-          <span class="divider">//</span>
-          <span class="date">November 14, 2019</span>
-        </h2>
-        <p>Added hamburger icon to top navbar.</p>
-        <p>Next steps:</p>
-        <ol>
-          <li>Add JavaScript for interaction</li>
-        </ol>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$54
+              <span class="divider">//</span>
+              <span class="date">December 8, 2019</span>
+            </h2>
+            <h3>React Components</h3>
+            <p>JavaScript classes are special functions, classes have expressions and declarations just like functions.
+              Difference between JavaScript <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">class</a> and function
+              is the order of declaring classes matter, but it doesn't matter for functions. Otherwise known as <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting">hoisting</a>.</p>
+            <p><a href="https://hacks.mozilla.org/2015/07/es6-in-depth-classes/">Why have classes</a>? A cleaner way to
+              have object-oriented design in JavaScipt. More on <a
+                href="https://hacks.mozilla.org/2015/08/es6-in-depth-subclassing/">subclassing</a>.</p>
+            <p>Subclassing <code>React.Component</code> is the way to declare a new component class. Component class
+              variable names must begin with capital letters! class names are written in UpperCamelCase. In a JSX
+              element, that capitalized first letter says, “I will be a component instance and not an HTML tag.”</p>
+            <p>React components must have a render method, <code>render() {}</code>, and value is a function. A render
+              method must contain a <code>return</code> statement. Usually, this <code>return</code> statement returns a
+              JSX expression.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$35
-          <span class="divider">//</span>
-          <span class="date">November 13, 2019</span>
-        </h2>
-        <p>Style menu in smaller screen mode.</p>
-        <p>Next steps:</p>
-        <ol>
-          <li>Add hamburger icon to top navbar: html and css</li>
-          <li>Add JavaScript for interaction</li>
-        </ol>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$53
+              <span class="divider">//</span>
+              <span class="date">December 7, 2019</span>
+            </h2>
+            <p>React can work without JSX. Each JSX is secretly a call to <code>React.createElement(component, props,
+                ...children)</code>, and that's how compilers translate JSX to JavaScript.</p>
+            <p>It is possible to create shorthand for React.createElement if we get tired of typing it all the time:</p>
+            <code>
+              const e = React.createElement; <br />
+              ReactDOM.render( <br />
+              e('div, null, 'Hello World'), document.getElementById('root')
+              <br />
+              );
+            </code>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$34
-          <span class="divider">//</span>
-          <span class="date">November 12, 2019</span>
-        </h2>
-        <p>Fixed width jump as menu turns sticky by making nav position fixed as soon as it hits screen with break.</p>
-      </article>
+            <p>The same can be done with <code>document.getElementById</code>...</p>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$33
-          <span class="divider">//</span>
-          <span class="date">November 11, 2019</span>
-        </h2>
-        <p>Fixed content width overlapping with fixed menu. Now running to problem when menu turns sticky, and changed <code>position</code> to <code>fixed</code>. Thus resulting in it escaping normal document flow and expanded content width. There is a noticeable width jump as sticky is applied, even when menu is hidden in tablet view.</p>
-      </article>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$52
+              <span class="divider">//</span>
+              <span class="date">December 6, 2019</span>
+            </h2>
+            <p>Use <code>.map()</code> to work with arrays and lists in JSX. Learn more about <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">.map()</a>
+            </p>
+            <p><code>Key</code> in JSX is like an id, but it doesn't get rendered. <code>Key</code> is useful internally
+              by React to keep track of lists. Use <code>keys</code> when:</p>
+            <ul>
+              <li>The list-items have memory from one render to the next. For instance, when a to-do list renders, each
+                item must
+                “remember” whether it was checked off. The items shouldn’t get amnesia when they render.</li>
+              <li>A list’s order might be shuffled. For instance, a list of search results might be shuffled from one
+                render to the next.</li>
+            </ul>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$51
+              <span class="divider">//</span>
+              <span class="date">December 4, 2019</span>
+            </h2>
+            <p>Update gencats to use image search instead.</p>
+            <p>P.S. I'm brain dead and just need more cat photos in life.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$50
+              <span class="divider">//</span>
+              <span class="date">December 3, 2019</span>
+            </h2>
+            <p>Update gencats to have 34 kitties search.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$49
+              <span class="divider">//</span>
+              <span class="date">December 2, 2019</span>
+            </h2>
+            <p>Learning using <code>if</code> statemetns in React in Codecademy. <code>If</code> statement will not work
+              inside JSX, but will work as regular JavaScript. Alternative workaround is to have JSX inside
+              <code>if</code> statements.</p>
+            <p><a
+                href="https://discuss.codecademy.com/t/when-should-i-use-an-if-statement-a-ternary-operator-or-the-operator/404789">When
+                to use</a> <code>Ternary</code>, <code>&&</code> and <code>if</code> statement: Choose the more concise
+              version.</p>
+            <ul>
+              <li>the <code>&&</code> and <code>ternary</code> operators are more concise, choose either of these when
+                possible</li>
+              <li>choose the <code>&&</code> over a <code>ternary</code> when you want an action to occur (or not) based
+                on a single
+                condition. Example: if...then...</li>
+              <li>Use <code>ternary</code> for if...else... that returns a value. Example: if kitty, else puppy.</li>
+              <li>choose an <code>if</code>/<code>else</code>/<code>else if</code> statement when you need to
+                extrapolate logic to make it easier to read and understand</li>
+            </ul>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$48
+              <span class="divider">//</span>
+              <span class="date">December 1, 2019</span>
+            </h2>
+            <p>The auto search script worked! Figured out how to automatically opening and closing search links. The
+              issue with tabs opening at the same was solved by spacing timeouts for each subsequent searches. <a
+                href="https://github.com/yishuenlo/gencats/blob/gh-pages/script.js">view script</a>.</p>
+            <p>Tips on solving coding problems in the future: try to solve the problem the "dumb" way first. I tried to
+              solve the problem with DRY method before I've figured out the solution, thus adding extra complications
+              and confused myself - I felt like I was thinking in circles. And keyword is "thinking". I tried to solve
+              the problem in my head, instead of just writing out the codes step by step.</p>
+            <p>Once I wrote the script step by step and did it the "dumb" way, I immediately figured out what the
+              problem was. And then I can further refine the script by making it DRY.</p>
+            <a href="https://yishuenlo.github.io/gencats/" class="button">View Demo</a>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$47
+              <span class="divider">//</span>
+              <span class="date">November 30, 2019</span>
+            </h2>
+            <p>Write JavaScript program to automate opening and closing tabs. The intent is to open a new link tab, and
+              automatically close the tab. And repeat through an array of links.</p>
+            <p>I've figured out opening one link and automiatically closing after 2 seconds. However, I cannot figure
+              out how to loop this behavior through an array. The speed of opening is faster than closing, so I ended up
+              opening a bunch new tabs and only closing one tab.</p>
+            <p>I will need to figure out how to call a function ONLY after the previous function is complete.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$46
+              <span class="divider">//</span>
+              <span class="date">November 29, 2019</span>
+            </h2>
+            <p>Continue learning React on <a href="https://www.codecademy.com/learn/react-101">Codecademy</a>.</p>
+            <h3>Main takeaways:</h3>
+            <ul>
+              <li>JSX is not JavaScript nor HTML. Its syntax is like HTML, but it's an extension of JavaScript. And you
+                write JSX in JavaScript file.</li>
+              <li>You need "translator" to compile and translate JSX into JavaScript. (Something like Babel? I needed to
+                install Node for React to work... need to learn this later.)</li>
+              <li><code>React</code> and <code>ReactDOM</code> are different. <code>React</code> is a JS library for
+                buildig UI, <code>ReactDOM</code> is the JS library for React to interacte with DOM. You need to import
+                both into JavaScript file for React to work properly.</li>
+              <li>React uses Virtual DOM to reduce re-rendering DOM from scratch everytime something is updated. Virtual
+                DOM is lightweight, so React compares current version of Virtual DOM from previous version to figure
+                what changed, and only update the content that changed from previous version.</li>
+              <li><strong>Analogy for Virtual DOM = Home Improvements</strong>: update and compare CAD/Sketchup plans,
+                and remodel specific rooms that changed instead of rebuilding the whole house from scratch every time
+                you want to do home improvements.</li>
+              <li>Call JavaScript within JSX with <code>{ }</code>.</li>
+            </ul>
+            <br />
+            <h3>Resources for <a href="https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html">using Git on the
+                Command Line.</a></h3>
+            <ul>
+              <li>Check out branches: <code>git checkout (name-of-branch)</code></li>
+              <li>View changes: <code>git status</code></li>
+              <li>Add local changes: <code>git add (file-name)</code></li>
+              <li>Add ALL local changes: <code>git add .</code></li>
+              <li>Commit local changes: <code>git commit -m "comment description"</code></li>
+              <li>Push all local commits: <code>git push origin (name-of-branch)</code></li>
+              <li>merge branches: <code>git merge master</code></li>
+            </ul>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$45
+              <span class="divider">//</span>
+              <span class="date">November 28, 2019</span>
+            </h2>
+            <p>Learning React on <a href="https://www.codecademy.com/learn/react-101">Codecademy</a>. The React
+              Tic-Tac-Toe tutorial was getting too confusing and I needed to start from scratch to understand every
+              single details about React, rather than just jumping in to build an app without proper understanding of
+              JSX, ReactDOM and <a href="https://www.codecademy.com/articles/react-virtual-dom">Virtual DOM</a>.</p>
+            <p>React on Codecademy</p>
+            <ul>
+              <li><a href="https://www.codecademy.com/learn/react-101">React Part I</a></li>
+              <li><a href="https://www.codecademy.com/learn/react-102">React Part II</a></li>
+            </ul>
+            <br>
+            <p>P.S. I'm also testing out VS Code to see how I like it, since Gatsby and Design.Code both used VS Code
+              for React. I think I like an intergrated terminal in the code editor... but I don't know how to use the
+              terminal to commit to my github yet. Once I figured this out, it'll make my life easier and just keep all
+              of my coding activities within one app window.</p>
+            <p>P.P.S Since this code log is so repetitive and componenet-heavy, it'll be good to convert this website
+              into React Components.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$44
+              <span class="divider">//</span>
+              <span class="date">November 27, 2019</span>
+            </h2>
+            <p>Go through React tutorial, Completing the Game, and getting confused. Main takeaway, have parent
+              component change the state of the children components by passing props. Do not have parent asking for the
+              children's state.</p>
+            <p>"To collect data from multiple children, or to have two child components communicate with each other, you
+              need to declare the shared state in their parent component instead. The parent component can pass the
+              state back down to the children by using props; this keeps the child components in sync with each other
+              and with the parent component." - <a
+                href="https://reactjs.org/tutorial/tutorial.html#completing-the-game">React</a></p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$43
+              <span class="divider">//</span>
+              <span class="date">November 26, 2019</span>
+            </h2>
+            <p>Set up React <a
+                href="https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment">local
+                development</a>. Start tic-tac-toe game with React <a
+                href="https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial">tutorial</a>.</p>
+            <p>Learning resources: <a href="https://reactfordesigners.com/">React for Designers</a></p>
+            <ul>
+              <li><a href="https://www.codecademy.com/learn/react-101">Codecademy</a></li>
+              <li><a href="https://egghead.io/courses/the-beginner-s-guide-to-react">Egghead</a></li>
+            </ul>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$42
+              <span class="divider">//</span>
+              <span class="date">November 25, 2019</span>
+            </h2>
+            <p>After spending sometime putting together the pages for HLC Plan Overview manually - literally putting in
+              the html for every single page. I wonder if there are ways to automate it with templates. After some
+              research, I came across static website, static website generator, and <a
+                href="https://jamstack.org/">JAM</a> (JavaScript, API and Markup)</p>
+            <p>JAM allows developers to focus on front-end development and not having to worry about server coding. And
+              it's lightweight so I don't have to get bogged down by CMSs like Wordpress. Which is exactly what I need.
+            </p>
+            <p>I browsed <a href="https://www.staticgen.com/">StaticGen</a> for options. Since I'd like to continue
+              using JavaScript and not learn any new languages to develop templates and automate my website pages, I've
+              decided on learning and using <a href="https://www.gatsbyjs.org/">Gatsby</a>.</p>
+            <p>Gatsby uses React for its template, so I'll be learning <a
+                href="https://reactjs.org/tutorial/tutorial.html">React</a> so I can be proficient enough to play with
+              and customize Gatsby starters templates. I can't wait to start JAMing soon!</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$41
+              <span class="divider">//</span>
+              <span class="date">November 24, 2019</span>
+            </h2>
+            <p>What is command line and why should I use it?</p>
+            <p><strong>What is the Command Line?</strong> Command Line a simple, basic way to communicate with our
+              computers. Our computers have evolved to use Graphic User Interface for users to communicate with
+              computers - such as Window Explorers. GUI is intuitive and visual, and requires mostly mouse clicks. On
+              the other hand, Command Line only uses keyboard and text.</p>
+            <p><strong>Why should I use the Command Line?</strong> Command Line offers more ways to communicate with my
+              computer through one channel, versus jumping through different locations and window explorers. For
+              example, Git uses command line. What it does is that the Command Line has ALL control of Git, whereas if I
+              use a GUI version, I'd have to install Github and uses Github's app to access different versions of Git.
+              While Github is more intuitive, it doens't offer more power and control.</p>
+            <p>One example of how Github doesn't have more control is when I had to use different Github users.
+              Switching through Github is hard and confusing... and almost seems impossible. Just becasue I logged out
+              of Github doesn't mean my computer is unlinked from my previous Git source. So while my Github is saying
+              I've logged out of <code>loys73</code> and is now using <code>yishuenlo</code>, my computer's Git is still
+              linked to <code>loys73</code>.</p>
+            <p>Apparently using command line is also easier to many batches of files, such as changing file names just
+              for .txt file. In summary, Command Line is the most rudimentary way to communicate with computers, but
+              also the easier way to control and let communters understand what we need from them. Almost like comparing
+              文言文 and 白話文.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$40
+              <span class="divider">//</span>
+              <span class="date">November 23, 2019</span>
+            </h2>
+            <p>Free Code Camp JavaScript exercise: <a
+                href="https://www.freecodecamp.org/learn/JavaScript-algorithms-and-data-structures/basic-JavaScript/replace-loops-using-recursion">replace
+                loops using recursion</a>. Write a function that will continually add to itself, until it reaches 0. For
+              example, 5+4+3+2+1.</p>
+            <p>I don't think I've understand the concept enough to explain why... and I don't understand why I must
+              learn it - how is it relevant to building pratical websites, if I don't want to do fractal math?</p>
+            <p><a href="https://www.sitepoint.com/recursion-functional-JavaScript/">This website</a> I found helped
+              explain what is recursion... that supplement Free Code Camp.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$39
+              <span class="divider">//</span>
+              <span class="date">November 21, 2019</span>
+            </h2>
+            <p>Review static sites. Read <a href="https://www.gatsbyjs.org/docs/">Gatsby.js documentation</a> and <a
+                href="https://www.gatsbyjs.org/tutorial/">tutorials</a> on how to set up static site with Gatsby. Will
+              need to learn React.js to customize the starter pages.</p>
+            <p>The goal is to transfer this simple site to Gatsby. Which would require me learning React.js...</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$38
+              <span class="divider">//</span>
+              <span class="date">November 17, 2019</span>
+            </h2>
+            <p>Mocking up / styling HLC plan overview content pages.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$37
+              <span class="divider">//</span>
+              <span class="date">November 16, 2019</span>
+            </h2>
+            <p>Added JavaScript and toggle interaction works. However, due to different z-index for header navbar and
+              hamburger menu, they create another issue. The expanded hamburger menu should cover up everything,
+              including the header, but hamburger icon is inside the header. Therefoe, it's either the whole menu covers
+              everything up, including the hamburger icon. Or hamburger icon is showing, but header is also on top of
+              expanded menu.</p>
+            <p>Potential solution:</p>
+            <ol>
+              <li>Move hamburger icon out of <code>header</code>, and into <code>nav</code>.</li>
+              <li>Hide rest of the items in header, except hamburger icon</li>
+            </ol>
+            <p>Decided to go with option 2 and hide header when clicking on hamburger icon. So the changes are just
+              within CSS and JavaScript, and no need to shuffle the structure in HTML.</p>
+            <p>Next step: add navigation at the footer.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$32
-          <span class="divider">//</span>
-          <span class="date">November 10, 2019</span>
-        </h2>
-        <p>Refine HLC overview sticky menu. Use <code>media query</code> to assign hamburger menu codes to sticky menu. Found bug that when menu turns into sticky, the <code>main</code> content overlaps with the menu. Will need to adjust <code>position</code> and <code>width</code> of content to resolve this issue.</p>
-        <p>For now, the menu will disppear when it hits designated <code>media query</code> width.</p>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$36
+              <span class="divider">//</span>
+              <span class="date">November 14, 2019</span>
+            </h2>
+            <p>Added hamburger icon to top navbar.</p>
+            <p>Next steps:</p>
+            <ol>
+              <li>Add JavaScript for interaction</li>
+            </ol>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$31
-          <span class="divider">//</span>
-          <span class="date">November 9, 2019</span>
-        </h2>
-        <p>Finish mockup practice. Refine code to refine visual design.</p>
-        <a href="demo/hamburgerMenu.html" class="button" >View Demo</a>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$35
+              <span class="divider">//</span>
+              <span class="date">November 13, 2019</span>
+            </h2>
+            <p>Style menu in smaller screen mode.</p>
+            <p>Next steps:</p>
+            <ol>
+              <li>Add hamburger icon to top navbar: html and css</li>
+              <li>Add JavaScript for interaction</li>
+            </ol>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$30
-          <span class="divider">//</span>
-          <span class="date">November 5, 2019</span>
-        </h2>
-        <p>Learning to build hamburger menu based on a demo. <a href="https://www.cssscript.com/basic-hamburger-toggle-menu-css-vanilla-JavaScript/" >view code here.</a></p>
-        <a href="https://www.cssscript.com/demo/basic-hamburger-toggle-menu-css-vanilla-JavaScript/" class="button" >View Demo</a>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$34
+              <span class="divider">//</span>
+              <span class="date">November 12, 2019</span>
+            </h2>
+            <p>Fixed width jump as menu turns sticky by making nav position fixed as soon as it hits screen with break.
+            </p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$29
-          <span class="divider">//</span>
-          <span class="date">November 4, 2019</span>
-        </h2>
-        <p>Mockup raw html elements for Adobe Illustrator Area Converter app.</p>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$33
+              <span class="divider">//</span>
+              <span class="date">November 11, 2019</span>
+            </h2>
+            <p>Fixed content width overlapping with fixed menu. Now running to problem when menu turns sticky, and
+              changed <code>position</code> to <code>fixed</code>. Thus resulting in it escaping normal document flow
+              and expanded content width. There is a noticeable width jump as sticky is applied, even when menu is
+              hidden in tablet view.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$28
-          <span class="divider">//</span>
-          <span class="date">November 3, 2019</span>
-        </h2>
-        <p>Further refine design for illustrator area converter in Adobe Experience Designer. Should have a decent design to start mocking up in HTML and CSS.</p>
-        <a href="https://xd.adobe.com/spec/3ddbfe29-003c-423a-42ca-6012d96d4ce3-4bea/" class="button" >View Design</a>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$32
+              <span class="divider">//</span>
+              <span class="date">November 10, 2019</span>
+            </h2>
+            <p>Refine HLC overview sticky menu. Use <code>media query</code> to assign hamburger menu codes to sticky
+              menu. Found bug that when menu turns into sticky, the <code>main</code> content overlaps with the menu.
+              Will need to adjust <code>position</code> and <code>width</code> of content to resolve this issue.</p>
+            <p>For now, the menu will disppear when it hits designated <code>media query</code> width.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$27
-          <span class="divider">//</span>
-          <span class="date">November 1, 2019</span>
-        </h2>
-        <p>Design area caculation conversion for Adobe Illustrator. Research design inspirations on Dribbble.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$26
-          <span class="divider">//</span>
-          <span class="date">October 31, 2019</span>
-        </h2>
-        <p>Refine HLC website design. Need to figure out how to best layout Tools for Transformation article. I'm still not quite satisfied with the design.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$25
-          <span class="divider">//</span>
-          <span class="date">October 30, 2019</span>
-        </h2>
-        <p>Write JavaScript to calculate parcel areas from pixel in Adobe Illustrator to acres. Calculate 9 parcels area for two different alternatives.</p>
-        <p>Create arrays to store parcel names and parcel areas, and used console.log to display acreage for each parcel.</p>
-        <p>Note: may create simple apps to calculate Illustrator area convertions, such as pixel to SF or acres, and account for different scales for the drawings.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$24
-          <span class="divider">//</span>
-          <span class="date">October 26, 2019</span>
-        </h2>
-        <p>Refine tools article. I'm not satisfied with the current design and will need to do more precedent research and deisgn iterations.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$23
-          <span class="divider">//</span>
-          <span class="date">October 24, 2019</span>
-        </h2>
-        <p>Work on a minimum viable product for the plan overview: instead of building out ALL the animation and interaction details, start with a static functional website first, and slowly layer in the interactions.</p>
-        <p>Optimize hero image layers so it loads faster on the web, and no lag time when launching the website.</p>
-        <p>Lay out CSS <code>grid</code> for the tools for transformation.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$22
-          <span class="divider">//</span>
-          <span class="date">October 21, 2019</span>
-        </h2>
-        <p>Based on viewing from the inspector for <a href="https://gardenestudio.com.br/index.php" >gardenestudio</a>, I can see:</p>
-        <ol>
-          <li><code>data-v</code> changes from 0 to 1 as I scroll from top to dowon. It seems <code>data-v</code> controlls the length of these vector lines.</li>
-          <li>In each individual <code>path</code> tag, there is a <code>style: "stroke-dasharray"</code> assigned to it. And <code>stroke-dasharray</code> has to number that changes values as I scroll.</li>
-          <li>The main <code>svg</code> tag has classes changing from <code>skrollable-before</code> to <code>skrollable-between</code>, as I scroll through the page.</li>
-        </ol>
-        <p>Challenges: I can't find the CSS for these classes... will need to dig around to find them.</p>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$31
+              <span class="divider">//</span>
+              <span class="date">November 9, 2019</span>
+            </h2>
+            <p>Finish mockup practice. Refine code to refine visual design.</p>
+            <a href="demo/hamburgerMenu.html" class="button">View Demo</a>
+          </article>
 
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$30
+              <span class="divider">//</span>
+              <span class="date">November 5, 2019</span>
+            </h2>
+            <p>Learning to build hamburger menu based on a demo. <a
+                href="https://www.cssscript.com/basic-hamburger-toggle-menu-css-vanilla-JavaScript/">view code here.</a>
+            </p>
+            <a href="https://www.cssscript.com/demo/basic-hamburger-toggle-menu-css-vanilla-JavaScript/"
+              class="button">View Demo</a>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$21
-          <span class="divider">//</span>
-          <span class="date">October 20, 2019</span>
-        </h2>
-        <p>Turn fixed navbar into sticky navbar. Move <code>nav</code> to the same <code>div</code> as main content, and use main content's <code>offsetTop</code> property to figure out when to apply <code>sticky</code> class to <code>nav</code>.</p>
-        <p>Made header fixed, so it has a visible button for the full plan throughout the website. The button is readily available for people who would want to see the full plan pdf, and addressed concern for using website vs pdf for planning documents. Fixed sticky navbar to accommodate the extra header height.</p>
-        <p>Fine tuned parallax animation, and make the layers movement more apparent.</p>
-        <p>Refine objective article: pulled out each objective into its own row, and add descriptions and learn more buttons to help direct users to objective pages.</p>
-        <p>Next step: apply animation to objective icons, much like the svg animation for <a href="https://gardenestudio.com.br/index.php" >this website</a></p>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$29
+              <span class="divider">//</span>
+              <span class="date">November 4, 2019</span>
+            </h2>
+            <p>Mockup raw html elements for Adobe Illustrator Area Converter app.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$20
-          <span class="divider">//</span>
-          <span class="date">October 18, 2019</span>
-        </h2>
-        <p>Looking for precedents to display the fixed menu. Figured out what I was looking for is called <a href="https://www.w3schools.com/howto/howto_js_navbar_sticky.asp" >Sticky Navbar</a>. The idea is to allow navbar to scoll naturally, once it hits a certain point, it will stay fixed (aka stick) in its location.</p>
-        <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky" class="button" >Example</a>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$28
+              <span class="divider">//</span>
+              <span class="date">November 3, 2019</span>
+            </h2>
+            <p>Further refine design for illustrator area converter in Adobe Experience Designer. Should have a decent
+              design to start mocking up in HTML and CSS.</p>
+            <a href="https://xd.adobe.com/spec/3ddbfe29-003c-423a-42ca-6012d96d4ce3-4bea/" class="button">View
+              Design</a>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$19
-          <span class="divider">//</span>
-          <span class="date">October 17, 2019</span>
-        </h2>
-        <p>Added new <code>div</code> for impact statement a way to cap the end of the parallax overlapping images, and allow <code>fixed navbar</code> to display along main content. </p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$18
-          <span class="divider">//</span>
-          <span class="date">October 14, 2019</span>
-        </h2>
-        <p>Fixed parallax layers so they're displaying properly without extra overlaps. Fixes include: </p>
-        <ul>
-          <li>Assign different window heights to keyart container and individual key art layers. Container has less height to crop out the bigger layers.</li>
-          <li>Assigning <code>z-index</code> to articles, so main content is above parallax and cover up the overlaps. </li>
-        </ul>
-        <p>Issues: <code>fixed</code> table of content is now beneath everything, since it doesn' have <code>z-index</code> assigned. In other words, TOC needs to be below hero article, but on top of main contents. But main content needs to be above of hero article. Will need to find alternative to fix <code>z-index</code> issue. Possible solution could be adding another article that's above hero, but below main. </p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$17
-          <span class="divider">//</span>
-          <span class="date">October 13, 2019</span>
-        </h2>
-        <p>Adjust image sizes. Change <code>background-size</code> to cover to stretch the image to fit the screen.</p>
-        <p>Test parallax effects on the layers. Run into problem with overlaping background and due to the images moving at different speed, they overlap at the bottom. Will need to cover up the bottom with another article. Also needed a new layer for the foreground grasses to make parallax effects more noticeable.</p>
-        <p>Will need to find ways to integrate HLCC logo in the hero image article.</p>
-        <p>Lesson learned: cannot have repeating elements in any layers. Each layer must have its own graphic.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$16
-          <span class="divider">//</span>
-          <span class="date">October 12, 2019</span>
-        </h2>
-        <p>Start a div article to place parallax layers using CSS <code>background-image</code>. Adjust height, width, and alignment to display image with ideal crop. </p>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$27
+              <span class="divider">//</span>
+              <span class="date">November 1, 2019</span>
+            </h2>
+            <p>Design area caculation conversion for Adobe Illustrator. Research design inspirations on Dribbble.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$26
+              <span class="divider">//</span>
+              <span class="date">October 31, 2019</span>
+            </h2>
+            <p>Refine HLC website design. Need to figure out how to best layout Tools for Transformation article. I'm
+              still not quite satisfied with the design.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$25
+              <span class="divider">//</span>
+              <span class="date">October 30, 2019</span>
+            </h2>
+            <p>Write JavaScript to calculate parcel areas from pixel in Adobe Illustrator to acres. Calculate 9 parcels
+              area for two different alternatives.</p>
+            <p>Create arrays to store parcel names and parcel areas, and used console.log to display acreage for each
+              parcel.</p>
+            <p>Note: may create simple apps to calculate Illustrator area convertions, such as pixel to SF or acres, and
+              account for different scales for the drawings.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$24
+              <span class="divider">//</span>
+              <span class="date">October 26, 2019</span>
+            </h2>
+            <p>Refine tools article. I'm not satisfied with the current design and will need to do more precedent
+              research and deisgn iterations.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$23
+              <span class="divider">//</span>
+              <span class="date">October 24, 2019</span>
+            </h2>
+            <p>Work on a minimum viable product for the plan overview: instead of building out ALL the animation and
+              interaction details, start with a static functional website first, and slowly layer in the interactions.
+            </p>
+            <p>Optimize hero image layers so it loads faster on the web, and no lag time when launching the website.</p>
+            <p>Lay out CSS <code>grid</code> for the tools for transformation.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$22
+              <span class="divider">//</span>
+              <span class="date">October 21, 2019</span>
+            </h2>
+            <p>Based on viewing from the inspector for <a
+                href="https://gardenestudio.com.br/index.php">gardenestudio</a>, I can see:</p>
+            <ol>
+              <li><code>data-v</code> changes from 0 to 1 as I scroll from top to dowon. It seems <code>data-v</code>
+                controlls the length of these vector lines.</li>
+              <li>In each individual <code>path</code> tag, there is a <code>style: "stroke-dasharray"</code> assigned
+                to it. And <code>stroke-dasharray</code> has to number that changes values as I scroll.</li>
+              <li>The main <code>svg</code> tag has classes changing from <code>skrollable-before</code> to
+                <code>skrollable-between</code>, as I scroll through the page.</li>
+            </ol>
+            <p>Challenges: I can't find the CSS for these classes... will need to dig around to find them.</p>
 
-      </article>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$15
-          <span class="divider">//</span>
-          <span class="date">October 11, 2019</span>
-        </h2>
-        <p>Explode hero image into 5 layers in Photoshop for parallax effects.</p>
-        <p>Note: used existing image of HLC. Had to patch up background images when "peeling" off the top layers. Consider compiling layers from scratch for a cleaner look in the future.</p>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$21
+              <span class="divider">//</span>
+              <span class="date">October 20, 2019</span>
+            </h2>
+            <p>Turn fixed navbar into sticky navbar. Move <code>nav</code> to the same <code>div</code> as main content,
+              and use main content's <code>offsetTop</code> property to figure out when to apply <code>sticky</code>
+              class to <code>nav</code>.</p>
+            <p>Made header fixed, so it has a visible button for the full plan throughout the website. The button is
+              readily available for people who would want to see the full plan pdf, and addressed concern for using
+              website vs pdf for planning documents. Fixed sticky navbar to accommodate the extra header height.</p>
+            <p>Fine tuned parallax animation, and make the layers movement more apparent.</p>
+            <p>Refine objective article: pulled out each objective into its own row, and add descriptions and learn more
+              buttons to help direct users to objective pages.</p>
+            <p>Next step: apply animation to objective icons, much like the svg animation for <a
+                href="https://gardenestudio.com.br/index.php">this website</a></p>
+          </article>
 
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$20
+              <span class="divider">//</span>
+              <span class="date">October 18, 2019</span>
+            </h2>
+            <p>Looking for precedents to display the fixed menu. Figured out what I was looking for is called <a
+                href="https://www.w3schools.com/howto/howto_js_navbar_sticky.asp">Sticky Navbar</a>. The idea is to
+              allow navbar to scoll naturally, once it hits a certain point, it will stay fixed (aka stick) in its
+              location.</p>
+            <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky"
+              class="button">Example</a>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$14
-          <span class="divider">//</span>
-          <span class="date">October 2, 2019</span>
-        </h2>
-        <p>Mock up landing page for the Plan Overview</p>
-        <a href="https://xd.adobe.com/view/0d226247-b261-4276-6d5e-b757f4244cb8-7b13/?hints=off" class="button" >View Mockup</a>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$19
+              <span class="divider">//</span>
+              <span class="date">October 17, 2019</span>
+            </h2>
+            <p>Added new <code>div</code> for impact statement a way to cap the end of the parallax overlapping images,
+              and allow <code>fixed navbar</code> to display along main content. </p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$18
+              <span class="divider">//</span>
+              <span class="date">October 14, 2019</span>
+            </h2>
+            <p>Fixed parallax layers so they're displaying properly without extra overlaps. Fixes include: </p>
+            <ul>
+              <li>Assign different window heights to keyart container and individual key art layers. Container has less
+                height to crop out the bigger layers.</li>
+              <li>Assigning <code>z-index</code> to articles, so main content is above parallax and cover up the
+                overlaps. </li>
+            </ul>
+            <p>Issues: <code>fixed</code> table of content is now beneath everything, since it doesn' have
+              <code>z-index</code> assigned. In other words, TOC needs to be below hero article, but on top of main
+              contents. But main content needs to be above of hero article. Will need to find alternative to fix
+              <code>z-index</code> issue. Possible solution could be adding another article that's above hero, but below
+              main. </p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$17
+              <span class="divider">//</span>
+              <span class="date">October 13, 2019</span>
+            </h2>
+            <p>Adjust image sizes. Change <code>background-size</code> to cover to stretch the image to fit the screen.
+            </p>
+            <p>Test parallax effects on the layers. Run into problem with overlaping background and due to the images
+              moving at different speed, they overlap at the bottom. Will need to cover up the bottom with another
+              article. Also needed a new layer for the foreground grasses to make parallax effects more noticeable.</p>
+            <p>Will need to find ways to integrate HLCC logo in the hero image article.</p>
+            <p>Lesson learned: cannot have repeating elements in any layers. Each layer must have its own graphic.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$16
+              <span class="divider">//</span>
+              <span class="date">October 12, 2019</span>
+            </h2>
+            <p>Start a div article to place parallax layers using CSS <code>background-image</code>. Adjust height,
+              width, and alignment to display image with ideal crop. </p>
 
-      </article>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$13
-          <span class="divider">//</span>
-          <span class="date">Sept 29, 2019</span>
-        </h2>
-        <p>Study parallax image at <a href="http://www.firewatchgame.com/" >FireWatch</a>. Main takeaways:</p>
-        <ol>
-          <li>Breaking down images into layers</li>
-          <li>Create a parallax container <code>div</code>, and place each layer as a <code>div</code> under the container</li>
-          <li>Put backround layer in the top <code>div</code>, foreground at the last <code>div</code></li>
-          <li>Use <code>background-image</code> to load each image layer in CSS</li>
-          <li>Create <code><a href="https://www.w3schools.com/tags/att_global_data.asp" >data-</a></code> attribute for scrolling speed, so JavaScipt can control the translation as mouse scrolls</li>
-          <li>Write JavaScript function that has event listener for mouse scroll. As mouse scrolls, each image layer will move at a different speed assigned by the <code>data-speed</code> attribute</li>
-        </ol>
-        <p>note: will need to find a good image for parallax layers. And design the landing page for The Plan for the HLC.</p>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$15
+              <span class="divider">//</span>
+              <span class="date">October 11, 2019</span>
+            </h2>
+            <p>Explode hero image into 5 layers in Photoshop for parallax effects.</p>
+            <p>Note: used existing image of HLC. Had to patch up background images when "peeling" off the top layers.
+              Consider compiling layers from scratch for a cleaner look in the future.</p>
 
-      </article>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$12
-          <span class="divider">//</span>
-          <span class="date">Sept 28, 2019</span>
-        </h2>
-        <p>Build a parallax page using cat photos. Need to have a deeper understanding of CSS's <code>position</code>.</p>
-        <a href="demo/parallax.html" class="button" >View Project</a>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$14
+              <span class="divider">//</span>
+              <span class="date">October 2, 2019</span>
+            </h2>
+            <p>Mock up landing page for the Plan Overview</p>
+            <a href="https://xd.adobe.com/view/0d226247-b261-4276-6d5e-b757f4244cb8-7b13/?hints=off" class="button">View
+              Mockup</a>
 
-      </article>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$11
-          <span class="divider">//</span>
-          <span class="date">Sept 27, 2019</span>
-        </h2>
-        <p>Started building a parallax demo based on <a href="https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm" >this web page.</a></p>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$13
+              <span class="divider">//</span>
+              <span class="date">Sept 29, 2019</span>
+            </h2>
+            <p>Study parallax image at <a href="http://www.firewatchgame.com/">FireWatch</a>. Main takeaways:</p>
+            <ol>
+              <li>Breaking down images into layers</li>
+              <li>Create a parallax container <code>div</code>, and place each layer as a <code>div</code> under the
+                container</li>
+              <li>Put backround layer in the top <code>div</code>, foreground at the last <code>div</code></li>
+              <li>Use <code>background-image</code> to load each image layer in CSS</li>
+              <li>Create <code><a href="https://www.w3schools.com/tags/att_global_data.asp">data-</a></code> attribute
+                for scrolling speed, so JavaScipt can control the translation as mouse scrolls</li>
+              <li>Write JavaScript function that has event listener for mouse scroll. As mouse scrolls, each image layer
+                will move at a different speed assigned by the <code>data-speed</code> attribute</li>
+            </ol>
+            <p>note: will need to find a good image for parallax layers. And design the landing page for The Plan for
+              the HLC.</p>
 
-      </article>
+          </article>
+
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$12
+              <span class="divider">//</span>
+              <span class="date">Sept 28, 2019</span>
+            </h2>
+            <p>Build a parallax page using cat photos. Need to have a deeper understanding of CSS's
+              <code>position</code>.</p>
+            <a href="demo/parallax.html" class="button">View Project</a>
+
+          </article>
+
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$11
+              <span class="divider">//</span>
+              <span class="date">Sept 27, 2019</span>
+            </h2>
+            <p>Started building a parallax demo based on <a
+                href="https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm">this web page.</a></p>
+
+          </article>
 
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$10
-          <span class="divider">//</span>
-          <span class="date">Sept 26, 2019</span>
-        </h2>
-        <p>Study the basics of creating parallax using CSS.</p>
-        <p>Main takeaway: use <code>background</code> properties to create parallax effects. <code>background-attachment</code> is the backbone of parallax effect. Use <code>fixed</code> to make background fixed relative to hte viewpoert, so it doesn't move with other elements.</p>
-        <p><code>
-          background-attachment: fixed; <br>
-          background-position: center; <br>
-          background-repeat: no-repeat; <br>
-          background-size: cover;
-        </code></p>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$10
+              <span class="divider">//</span>
+              <span class="date">Sept 26, 2019</span>
+            </h2>
+            <p>Study the basics of creating parallax using CSS.</p>
+            <p>Main takeaway: use <code>background</code> properties to create parallax effects.
+              <code>background-attachment</code> is the backbone of parallax effect. Use <code>fixed</code> to make
+              background fixed relative to hte viewpoert, so it doesn't move with other elements.</p>
+            <p><code>
+                background-attachment: fixed; <br>
+                background-position: center; <br>
+                background-repeat: no-repeat; <br>
+                background-size: cover;
+              </code></p>
 
-        <p>Use <code>min-height</code> to set a specific height for background image. Must add enough content, aka enough height to the next article, for scrolling effects to be apparent.</p>
-      </article>
+            <p>Use <code>min-height</code> to set a specific height for background image. Must add enough content, aka
+              enough height to the next article, for scrolling effects to be apparent.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$9
-          <span class="divider">//</span>
-          <span class="date">Sept 25, 2019</span>
-        </h2>
-        <p>Refine and modify paint page. Instead of just having article, added img to test out styling img tag. Applied <code>object-fit:cover</code> to avoid stretching images. Will need to figure out how to design paint page to record progress and still keep design simple and minimal. Next step is to make the page responsive with different image sizes.</p>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$9
+              <span class="divider">//</span>
+              <span class="date">Sept 25, 2019</span>
+            </h2>
+            <p>Refine and modify paint page. Instead of just having article, added img to test out styling img tag.
+              Applied <code>object-fit:cover</code> to avoid stretching images. Will need to figure out how to design
+              paint page to record progress and still keep design simple and minimal. Next step is to make the page
+              responsive with different image sizes.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$8
-          <span class="divider">//</span>
-          <span class="date">Sept 24, 2019</span>
-        </h2>
-        <p>Mock up paint page with CSS grid. Will need to research CSS grid more for layout options.</p>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$8
+              <span class="divider">//</span>
+              <span class="date">Sept 24, 2019</span>
+            </h2>
+            <p>Mock up paint page with CSS grid. Will need to research CSS grid more for layout options.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$7
-          <span class="divider">//</span>
-          <span class="date">Sept 23, 2019</span>
-        </h2>
-        <p>Add button to view JavaScript project on JS Bin. Style button in CSS.</p>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$7
+              <span class="divider">//</span>
+              <span class="date">Sept 23, 2019</span>
+            </h2>
+            <p>Add button to view JavaScript project on JS Bin. Style button in CSS.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$6
-          <span class="divider">//</span>
-          <span class="date">Sept 22, 2019</span>
-        </h2>
-        <p>Continue refine webite's CSS. Make website responsive. Added about page.</p>
-      </article>
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$5
-          <span class="divider">//</span>
-          <span class="date">Sept 21, 2019</span>
-        </h2>
-        <p>Design and build minimalist website to log my coding journey towards a macbook - the website you are looking at right now :)</p>
-        <p>Developed style and html pages for code and process. Today's coding definitely took more than 10 minutes. More like 4 hours ish... and I'm still on level 2, so $1 for me. yay. The most important thing is to <em>consistently show up</em> and today is just a very good day.</p>
-      </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$6
+              <span class="divider">//</span>
+              <span class="date">Sept 22, 2019</span>
+            </h2>
+            <p>Continue refine webite's CSS. Make website responsive. Added about page.</p>
+          </article>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$5
+              <span class="divider">//</span>
+              <span class="date">Sept 21, 2019</span>
+            </h2>
+            <p>Design and build minimalist website to log my coding journey towards a macbook - the website you are
+              looking at right now :)</p>
+            <p>Developed style and html pages for code and process. Today's coding definitely took more than 10 minutes.
+              More like 4 hours ish... and I'm still on level 2, so $1 for me. yay. The most important thing is to
+              <em>consistently show up</em> and today is just a very good day.</p>
+          </article>
 
-      <article class="post">
-        <h4>level 2</h4>
-        <h2>$4
-          <span class="divider">//</span>
-          <span class="date">Sept 20, 2019</span>
-        </h2>
-        <p>Write JavaScript to allow calculation functions to run immediately after input, so users do not need to press enter or click on another button to convert the temperature.</p>
-        <p>Used <code>setTimeout</code> to delay running calculation functions after a keyup <code>addEventListener</code> is triggered on <code>&lt;input&gt;</code>.</p>
-        <a href="https://jsbin.com/danezac/edit?js,output" class="button" >View Project on JS Bin</a>
-      </article>
-      <article class="post">
-        <h4>level 1</h4>
-        <h2>$3 <span class="divider">//</span> <span class="date">Sept 19, 2019</span></h2>
-        <p>Write CSS to design display. Align inputs and labels to the center using <code>flex</code>. Tried out all of flex's "align" options and found out <code class="code-highlight">align items</code> is what I was looking for.</p>
-        <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container"  title="visit MDN to read more">MDN</a>: Aligning Items in a Flex Container</h3>
-        <ul>
-          <li><code>align-item</code> - controls alignment of all items on the cross axis.</li>
-          <li><code>align-self</code> - controls alignment of an individual flex item on the cross axis.</li>
-          <li><code>align-content</code> - described in the spec as for “packing flex lines”; controls space between flex lines on the cross axis.</li>
-        </ul>
-      </article>
-      <article class="post">
-        <h4>level 1</h4>
-        <h2>$2 <span class="divider">//</span> <span class="date">Sept 18, 2019</span></h2>
-        <p>Write HTML structure for problem title, descriptions and input forms and labels.</p>
-      </article>
-      <article class="post">
-        <h4>level 1</h4>
-        <h2>$1 <span class="divider">//</span> <span class="date">Sept 16, 2019</span></h2>
-        <p>Return back to coding after months of hiatus. Continue working on my <a href="https://yishuenlo.github.io/150-js-basics/#ex012" >150 JavaScript Basic Project</a> #12: Temperature Converter, and wrote JavaScript functions to convert Celsius to Fahrenheit, and vice versa.</p>
-      </article>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-credit">
-          <p class="fine-print">Copyright © 2019 Yishuen Lo</p>
-        </div>
-
-        <div class="footer-social">
-          <ul class="social-icons-container">
-            <li class="icon-list"><a id="profile-link" href="https://github.com/yishuenlo" >
-              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.57 32"><defs></defs><title>Github</title><path class="icons" d="M16.29,1a15,15,0,0,0-4.75,29.23c.75.14,1-.32,1-.72s0-1.3,0-2.55c-4.17.91-5.05-2-5.05-2a4.05,4.05,0,0,0-1.67-2.2c-1.36-.93.1-.91.1-.91a3.16,3.16,0,0,1,2.3,1.55,3.19,3.19,0,0,0,4.37,1.24,3.16,3.16,0,0,1,1-2c-3.33-.38-6.83-1.67-6.83-7.41a5.8,5.8,0,0,1,1.54-4,5.4,5.4,0,0,1,.15-4s1.26-.4,4.12,1.54a14.7,14.7,0,0,1,3.76-.51A14.68,14.68,0,0,1,20,8.76c2.87-1.94,4.12-1.54,4.12-1.54a5.35,5.35,0,0,1,.15,4,5.8,5.8,0,0,1,1.54,4c0,5.76-3.5,7-6.84,7.4a3.61,3.61,0,0,1,1,2.78c0,2,0,3.62,0,4.11s.27.87,1,.72A15,15,0,0,0,16.29,1Z"/></svg>
-            </a></li>
-            <li class="icon-list"><a id="profile-link" href="https://www.freecodecamp.org/yishuen" >
-              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs></defs><title>freeCodeCamp</title><path class="icons" d="M7.21,6.78a.82.82,0,1,0-1-1.31,13.22,13.22,0,0,0,0,21.06.81.81,0,0,0,1.15-.16.81.81,0,0,0-.15-1.15,11.56,11.56,0,0,1,0-18.44ZM25.8,5.47a.83.83,0,0,0-1.15.16.81.81,0,0,0,.15,1.15,11.56,11.56,0,0,1,0,18.44.83.83,0,0,0-.16,1.15.84.84,0,0,0,.66.33.81.81,0,0,0,.49-.17,13.22,13.22,0,0,0,0-21.06ZM23,23.09H9a.83.83,0,0,0,0,1.65H23a.83.83,0,0,0,0-1.65Zm-8.44-1.63a1.71,1.71,0,0,0,.44,0,8.54,8.54,0,0,1-1.19-1.08c-1-1.38-.77-2.84.64-4.05s1.41-1.56.78-2.92a1.79,1.79,0,0,1,1.52,2,3.55,3.55,0,0,0-.06,1,.76.76,0,0,0,1,.69.7.7,0,0,0,.61-1,5.21,5.21,0,0,1-.08-.57l.23-.08a8.15,8.15,0,0,1,.72,1.41c.51,1.65-.54,2.77-1.55,3.92,1.25.24,3.05-1.71,3.41-3.53.55-2.71-.93-6.06-2.95-6.5a11.27,11.27,0,0,1,.45,1.07c.13.43.23.92-.33,1.12s-.78-.28-.89-.71c-.16-.63-.26-1.28-.39-1.93a4.11,4.11,0,0,0-3-3.35,7.63,7.63,0,0,0-1.3-.1c1.72,2,1.79,2.87.53,5-.51.88-1.06,1.73-1.58,2.6C9.7,17.59,11.88,20.66,14.54,21.46Z"/></svg>
-            </a></li>
-            <li class="icon-list"><a id="profile-link" href="https://www.linkedin.com/in/yishuen-lo" >
-              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.57 32"><defs></defs><title>LinkedIn</title><path class="icons" d="M16.29,1a15,15,0,1,0,15,15A15,15,0,0,0,16.29,1Zm-5,24.15H7.58V13.09h3.67ZM9.37,11.44a2.31,2.31,0,0,1-2.25-2.3A2.35,2.35,0,0,1,9.39,6.85,2.37,2.37,0,0,1,11.7,9.21,2.33,2.33,0,0,1,9.37,11.44ZM25.44,25.11H21.67c0-1.8,0-3.61,0-5.42a17,17,0,0,0-.05-1.89c-.09-.88-.43-1.61-1.43-1.77a2,2,0,0,0-2.29,1.2A4.91,4.91,0,0,0,17.53,19c-.05,2,0,4.05,0,6.15H13.76v-12h3.48c0,.46,0,.88.07,1.43l.67-.61a4.93,4.93,0,0,1,5.47-.78,4,4,0,0,1,2,3.78C25.49,19.6,25.44,22.32,25.44,25.11Z"/></svg>
-            </a></li>
-          </ul>
-        </div>
+          <article class="post">
+            <h4>level 2</h4>
+            <h2>$4
+              <span class="divider">//</span>
+              <span class="date">Sept 20, 2019</span>
+            </h2>
+            <p>Write JavaScript to allow calculation functions to run immediately after input, so users do not need to
+              press enter or click on another button to convert the temperature.</p>
+            <p>Used <code>setTimeout</code> to delay running calculation functions after a keyup
+              <code>addEventListener</code> is triggered on <code>&lt;input&gt;</code>.</p>
+            <a href="https://jsbin.com/danezac/edit?js,output" class="button">View Project on JS Bin</a>
+          </article>
+          <article class="post">
+            <h4>level 1</h4>
+            <h2>$3 <span class="divider">//</span> <span class="date">Sept 19, 2019</span></h2>
+            <p>Write CSS to design display. Align inputs and labels to the center using <code>flex</code>. Tried out all
+              of flex's "align" options and found out <code class="code-highlight">align items</code> is what I was
+              looking for.</p>
+            <h3><a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container"
+                title="visit MDN to read more">MDN</a>: Aligning Items in a Flex Container</h3>
+            <ul>
+              <li><code>align-item</code> - controls alignment of all items on the cross axis.</li>
+              <li><code>align-self</code> - controls alignment of an individual flex item on the cross axis.</li>
+              <li><code>align-content</code> - described in the spec as for “packing flex lines”; controls space between
+                flex lines on the cross axis.</li>
+            </ul>
+          </article>
+          <article class="post">
+            <h4>level 1</h4>
+            <h2>$2 <span class="divider">//</span> <span class="date">Sept 18, 2019</span></h2>
+            <p>Write HTML structure for problem title, descriptions and input forms and labels.</p>
+          </article>
+          <article class="post">
+            <h4>level 1</h4>
+            <h2>$1 <span class="divider">//</span> <span class="date">Sept 16, 2019</span></h2>
+            <p>Return back to coding after months of hiatus. Continue working on my <a
+                href="https://yishuenlo.github.io/150-js-basics/#ex012">150 JavaScript Basic Project</a> #12:
+              Temperature Converter, and wrote JavaScript functions to convert Celsius to Fahrenheit, and vice versa.
+            </p>
+          </article>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-credit">
+        <p class="fine-print">Copyright © 2019 Yishuen Lo</p>
       </div>
-    </footer>
-  </body>
+
+      <div class="footer-social">
+        <ul class="social-icons-container">
+          <li class="icon-list"><a id="profile-link" href="https://github.com/yishuenlo">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.57 32">
+                <defs></defs>
+                <title>Github</title>
+                <path class="icons"
+                  d="M16.29,1a15,15,0,0,0-4.75,29.23c.75.14,1-.32,1-.72s0-1.3,0-2.55c-4.17.91-5.05-2-5.05-2a4.05,4.05,0,0,0-1.67-2.2c-1.36-.93.1-.91.1-.91a3.16,3.16,0,0,1,2.3,1.55,3.19,3.19,0,0,0,4.37,1.24,3.16,3.16,0,0,1,1-2c-3.33-.38-6.83-1.67-6.83-7.41a5.8,5.8,0,0,1,1.54-4,5.4,5.4,0,0,1,.15-4s1.26-.4,4.12,1.54a14.7,14.7,0,0,1,3.76-.51A14.68,14.68,0,0,1,20,8.76c2.87-1.94,4.12-1.54,4.12-1.54a5.35,5.35,0,0,1,.15,4,5.8,5.8,0,0,1,1.54,4c0,5.76-3.5,7-6.84,7.4a3.61,3.61,0,0,1,1,2.78c0,2,0,3.62,0,4.11s.27.87,1,.72A15,15,0,0,0,16.29,1Z" />
+              </svg>
+            </a></li>
+          <li class="icon-list"><a id="profile-link" href="https://www.freecodecamp.org/yishuen">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <defs></defs>
+                <title>freeCodeCamp</title>
+                <path class="icons"
+                  d="M7.21,6.78a.82.82,0,1,0-1-1.31,13.22,13.22,0,0,0,0,21.06.81.81,0,0,0,1.15-.16.81.81,0,0,0-.15-1.15,11.56,11.56,0,0,1,0-18.44ZM25.8,5.47a.83.83,0,0,0-1.15.16.81.81,0,0,0,.15,1.15,11.56,11.56,0,0,1,0,18.44.83.83,0,0,0-.16,1.15.84.84,0,0,0,.66.33.81.81,0,0,0,.49-.17,13.22,13.22,0,0,0,0-21.06ZM23,23.09H9a.83.83,0,0,0,0,1.65H23a.83.83,0,0,0,0-1.65Zm-8.44-1.63a1.71,1.71,0,0,0,.44,0,8.54,8.54,0,0,1-1.19-1.08c-1-1.38-.77-2.84.64-4.05s1.41-1.56.78-2.92a1.79,1.79,0,0,1,1.52,2,3.55,3.55,0,0,0-.06,1,.76.76,0,0,0,1,.69.7.7,0,0,0,.61-1,5.21,5.21,0,0,1-.08-.57l.23-.08a8.15,8.15,0,0,1,.72,1.41c.51,1.65-.54,2.77-1.55,3.92,1.25.24,3.05-1.71,3.41-3.53.55-2.71-.93-6.06-2.95-6.5a11.27,11.27,0,0,1,.45,1.07c.13.43.23.92-.33,1.12s-.78-.28-.89-.71c-.16-.63-.26-1.28-.39-1.93a4.11,4.11,0,0,0-3-3.35,7.63,7.63,0,0,0-1.3-.1c1.72,2,1.79,2.87.53,5-.51.88-1.06,1.73-1.58,2.6C9.7,17.59,11.88,20.66,14.54,21.46Z" />
+              </svg>
+            </a></li>
+          <li class="icon-list"><a id="profile-link" href="https://www.linkedin.com/in/yishuen-lo">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.57 32">
+                <defs></defs>
+                <title>LinkedIn</title>
+                <path class="icons"
+                  d="M16.29,1a15,15,0,1,0,15,15A15,15,0,0,0,16.29,1Zm-5,24.15H7.58V13.09h3.67ZM9.37,11.44a2.31,2.31,0,0,1-2.25-2.3A2.35,2.35,0,0,1,9.39,6.85,2.37,2.37,0,0,1,11.7,9.21,2.33,2.33,0,0,1,9.37,11.44ZM25.44,25.11H21.67c0-1.8,0-3.61,0-5.42a17,17,0,0,0-.05-1.89c-.09-.88-.43-1.61-1.43-1.77a2,2,0,0,0-2.29,1.2A4.91,4.91,0,0,0,17.53,19c-.05,2,0,4.05,0,6.15H13.76v-12h3.48c0,.46,0,.88.07,1.43l.67-.61a4.93,4.93,0,0,1,5.47-.78,4,4,0,0,1,2,3.78C25.49,19.6,25.44,22.32,25.44,25.11Z" />
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
