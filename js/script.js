@@ -27,7 +27,7 @@ const CURRENT_EXP = document.querySelectorAll('.current-exp');
 const NAV_BAR = document.querySelector('.nav-ul');
 
 NAV_BAR.innerHTML = `
-    <li><a href="index.html">code</a></li>
+    <li><a href="index.html">log</a></li>
     <li><a href="process.html">process</a></li>
     <li><a href="about.html">about</a></li>
 `;
