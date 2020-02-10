@@ -151,6 +151,13 @@ article ul li, article ol li{
   margin-bottom: 0.5em;
 }
 
+article img{
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+
+
 section{
   margin: 3em 0;
   padding-bottom: 2em;
@@ -285,6 +292,10 @@ img.image{
   /* background-image: url('../img/MSI GS.png');
   background-position: center;
   background-size: cover; */
+}
+
+.post a img {
+  border-bottom: none;
 }
 
 @media only screen and (min-width: 360px){
