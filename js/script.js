@@ -92,7 +92,7 @@ function calcCurrentLevel(exp){
 CURRENT_LEVEL_BADGE.innerHTML = calcCurrentLevel(currentExp);
 
 //show progress length based on current exp
-currentProgress.style.width = `${currentExp / levelExp(currentLevel+1)*100}%`;
+currentProgress.style.width = `${(currentExp - levelExp(currentLevel)) / (levelExp(currentLevel+1)-levelExp(currentLevel))*100}%`;
 
 //show progress text
 CURRENT_EXP_DISPLAY.innerHTML = currentExp;

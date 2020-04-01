@@ -144,6 +144,7 @@ a:hover{
 .current-progress{
   position: absolute;
   top: 10px;
+  left: 20px;
   height: 23px;
   width: 20%;
   background-color: var(--accent);
@@ -153,6 +154,7 @@ a:hover{
 .level-progress{
   position: absolute;
   top: 10px;
+  left: 20px;
   background-color: #efefef;
   height: 23px;
   width: 100%;
