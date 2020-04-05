@@ -368,6 +368,11 @@ th, td{
   width: 33%;
 }
 
+#codewar-badge {
+  display: inline-block;
+  width: 350px;
+}
+
 img.image{
   display: block;
   width: 100%;
