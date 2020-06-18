@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\A - Development\\Labs"
+		},
+		{
+			"path": "..\\..\\A - Development\\CSS Grid"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\react-tutorial"
+		},
+		{
+			"path": "..\\..\\A - Development\\Slider"
+		},
+		{
+			"path": "..\\..\\A - Development\\react"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "yish"
+	}
+}
