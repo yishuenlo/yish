@@ -40,10 +40,10 @@ const PRINT_EXP = document.querySelectorAll('.exp-table');
 const PRINT_EXP_TNL = document.querySelectorAll('.exp-tnl');
 
 //populate level & experience table
-for (i = 0; i < PRINT_LEVEL.length; i++) {
-    PRINT_LEVEL[i].innerHTML = `level ${i + 1}`;
-    PRINT_EXP[i].innerHTML = `$${levelExp(i + 1)} EXP`;
-    PRINT_EXP_TNL[i].innerHTML = `$${levelExp(i + 2) - levelExp(i + 1)} EXP`;
+for (i = 1; i < PRINT_LEVEL.length; i++) {
+    PRINT_LEVEL[i].innerHTML = `level ${i}`;
+    PRINT_EXP[i].innerHTML = `$${levelExp(i)} EXP`;
+    PRINT_EXP_TNL[i].innerHTML = `$${levelExp(i + 1) - levelExp(i)} EXP`;
 }
 
 //DOM - log components
